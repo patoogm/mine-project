@@ -1,4 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 .img {
   background-image: url("https://eoliasur.com/wp-content/uploads/2019/11/eoliasur-web-2020-1.jpg?id=1288");
   background-repeat: no-repeat;
+  height: 30rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.imgText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.imgText > h1 {
+  line-height: 1;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.imgText > p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+div .infoBlock {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  min-width: 100%;
+  text-align: center;
+}
+
+.infoBlock > div:first-child {
+  background-color: rgb(0, 71, 224);
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 4rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.infoBlock > div:nth-child(2) {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.infoBlock > div:nth-child(2) > div {
+  background-color: rgb(0, 71, 224);
+  height: 10rem;
+  margin: 0;
+  padding: 0;
+}
+
+.infoBlock > div:nth-child(2) > div > a {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoBlock > div:nth-child(2) > div > a:hover {
+  background-color: rgb(5, 63, 187);
+  transition: 0.6s;
+}
+
+@media all and (min-width: 768px) {
+  .infoBlock > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .infoBlock > div:nth-child(2) > div {
+    margin-right: 0.3rem;
+  }
 }
