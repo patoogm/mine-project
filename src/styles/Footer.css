@@ -3,6 +3,11 @@
   color: white;
 }
 
+.footer-container > div {
+  margin: 0;
+  padding: 0;
+}
+
 /* .description {
  width: 50%;
 } */
