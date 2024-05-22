@@ -5,10 +5,8 @@ export const Footer = () => {
   return (
     <div className="footer-container">
       <Row sm={12}>
-        <Col sm={12}>
-          <h1>Eoliasur</h1>
-        </Col>
         <Col sm={12} lg={6}>
+          <h1>Eoliasur</h1>
           <p>
             Eoliasur, fundada en 2011, nace con la visión de ser un actor clave
             en la transformación de la matriz energética a través del desarrollo
