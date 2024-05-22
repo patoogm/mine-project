@@ -1,6 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 .footer-container {
   background-color: #262626;
   color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-container p {
+  margin: 0;
+  padding: 0;
 }
 
 .footer-container > div {
@@ -8,10 +16,35 @@
   padding: 0;
 }
 
-/* .description {
- width: 50%;
-} */
+.footer-container > div:first-child {
+  padding-top: 1rem;
+  padding-bottom: 0.4rem;
+}
 
-.contact {
-  width: 50%;
+.footer-container > div > div {
+  font-weight: 200;
+  padding: 1rem;
+}
+
+.footer-container > div:nth-child(2) {
+  font-size: 0.7rem;
+  text-align: center;
+  background-color: #222222;
+}
+
+@media all and (min-width: 992px) {
+  .footer-container > div:first-child {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  .footer-container > div > div {
+    padding-bottom: 0;
+  }
+
+  .footer-container > div:nth-child(2) {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
 }
