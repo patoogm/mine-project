@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.img {
+  background-image: url("https://eoliasur.com/wp-content/uploads/2019/11/eoliasur-web-2020-1.jpg?id=1288");
+  background-repeat: no-repeat;
+  height: 30rem;
+}
+
+.imgTextAboutUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.imgTextAboutUs > h1 {
+  line-height: 3.4rem;
+  font-size: 2.6rem;
+  text-align: center;
+  font-weight: 700;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+
+.aboutUsContainer > div:first-child {
+  background-color: rgb(0, 71, 224);
+}
+
+.btnInPage {
+  display: flex;
+  justify-content: center;
+}
+
+.btnInPage a {
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+div .aboutUsContainer {
+  max-width: 100%;
+}
+
+.aboutUsContainer > .companyInfo {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutUsContainer h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.aboutUsContainer p {
+  font-weight: 400;
+  color: rgb(99, 99, 99);
+  padding: 0.8rem 0.8rem 0.4rem 0.8rem;
+}
+
+.cardsArea {
+  margin-bottom: 2rem;
+}
+
+.cardsArea > div {
+  margin-top: 3rem !important;
+}
