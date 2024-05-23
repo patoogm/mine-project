@@ -1,0 +1,9 @@
+.navBarSwitch {
+  display: flex;
+  align-items: center;
+}
+
+#basic-navbar-nav {
+  justify-content: flex-end;
+  flex-grow: 0;
+}
