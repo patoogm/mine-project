@@ -1,5 +1,7 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { Button, Col, Container, Form, InputGroup, Row } from "react-bootstrap"
+import { LanguageContext } from '../contexts/LanguageContext';
+import '../styles/ContactForm.css'
 
 
 export const ContactForm = () => {
@@ -15,79 +17,92 @@ export const ContactForm = () => {
     setValidated(true);
   };
 
+  const useLanguage = () => useContext(LanguageContext);
+
+  const { t } = useLanguage();
+
   return (
-    <Container>
-      <Form noValidate validated={validated} onSubmit={handleSubmit}>
-        <Row className="mb-3">
-          <Form.Group as={Col} md="4" controlId="validationCustom01">
-            <Form.Label>First name</Form.Label>
-            <Form.Control
-              required
-              type="text"
-              placeholder="First name"
-              defaultValue="Mark"
-            />
-            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-          </Form.Group>
-          <Form.Group as={Col} md="4" controlId="validationCustom02">
-            <Form.Label>Last name</Form.Label>
-            <Form.Control
-              required
-              type="text"
-              placeholder="Last name"
-              defaultValue="Otto"
-            />
-            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-          </Form.Group>
-          <Form.Group as={Col} md="4" controlId="validationCustomUsername">
-            <Form.Label>Username</Form.Label>
-            <InputGroup hasValidation>
-              <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
-              <Form.Control
-                type="text"
-                placeholder="Username"
-                aria-describedby="inputGroupPrepend"
-                required
-              />
-              <Form.Control.Feedback type="invalid">
-                Please choose a username.
-              </Form.Control.Feedback>
-            </InputGroup>
-          </Form.Group>
+    <>
+      <div className="form-container">
+        <Row sm={12} className='justify-content-center'>
+          <Col sm={12} lg={5}>
+            <h3>PROPIETARIOS DE CAMPOS</h3>
+            <p>
+            La instalación de un proyecto de energía renovable en tu terreno constituye una oportunidad única para asegurarte un flujo constante de ingresos adicionales a largo plazo mientras continuás con la explotación principal de la tierra.
+
+            En Eoliasur buscamos crear alianzas sólidas y transparentes con los propietarios de campos en los que desarrollamos nuestros proyectos. Creemos que trabajando en conjunto es la mejor manera de llevar a cabo proyectos sostenibles tanto desde el punto de vista ambiental, social y económico. Ponemos especial foco en crear un diseño óptimo para el proyecto respetando el ecosistema y cuidando las instalaciones existentes de los campos.
+
+            Si estás interesado, ¡Contactanos!
+            </p>
+          </Col>
+          <Col sm={12} lg={5}>
+            <Container>
+              <Form noValidate validated={validated} onSubmit={handleSubmit}>
+                <Row className="mb-4">
+                  <Form.Group as={Col} md="12" controlId="validationCustom01">
+                    <Form.Control
+                      required
+                      type="text"
+                      placeholder={t.contact.namePlaceholder}
+                    />
+                    <Form.Control.Feedback type="invalid">
+                      {t.contact.nameError}
+                    </Form.Control.Feedback>
+                  </Form.Group>
+                </Row>
+
+                <Row className="mb-4">
+                  <Form.Group as={Col} md="12" controlId="validationCustom02">
+                    <Form.Control
+                      required
+                      type="email"
+                      placeholder={t.contact.mailPlaceholder}
+                    />
+                    <Form.Control.Feedback type="invalid">
+                      {t.contact.mailError}
+                    </Form.Control.Feedback>
+                  </Form.Group>
+                </Row>
+
+                <Row className="mb-4">
+                <Form.Group as={Col} md="12" controlId="validationCustomUsername">
+                  <InputGroup hasValidation>
+                    <Form.Control
+                      type="number"
+                      placeholder={t.contact.phonePlaceholder}
+                      required
+                    />
+                    <Form.Control.Feedback type="invalid">
+                      {t.contact.phoneError}
+                    </Form.Control.Feedback>
+                  </InputGroup>
+                </Form.Group>
+                </Row>
+
+                <Row className="mb-4">
+                  <Form.Group as={Col} md="12" controlId="validationCustom03">
+                    <Form.Control 
+                      type="file" 
+                      accept='.pdf'
+                    />
+                  </Form.Group>
+                </Row>
+
+                <Row className="mb-4">
+                  <Form.Group as={Col} md="12" controlId="validationCustom04">
+                    <Form.Control 
+                      as="textarea"
+                      placeholder={t.contact.commentsPlaceholder}
+                      style={{ height: '100px' }}
+                    />
+                  </Form.Group>
+                </Row>
+                <Button type="submit">{t.contact.sendButton}</Button>
+              </Form>
+            </Container>
+          </Col>
         </Row>
-        <Row className="mb-3">
-          <Form.Group as={Col} md="6" controlId="validationCustom03">
-            <Form.Label>City</Form.Label>
-            <Form.Control type="text" placeholder="City" required />
-            <Form.Control.Feedback type="invalid">
-              Please provide a valid city.
-            </Form.Control.Feedback>
-          </Form.Group>
-          <Form.Group as={Col} md="3" controlId="validationCustom04">
-            <Form.Label>State</Form.Label>
-            <Form.Control type="text" placeholder="State" required />
-            <Form.Control.Feedback type="invalid">
-              Please provide a valid state.
-            </Form.Control.Feedback>
-          </Form.Group>
-          <Form.Group as={Col} md="3" controlId="validationCustom05">
-            <Form.Label>Zip</Form.Label>
-            <Form.Control type="text" placeholder="Zip" required />
-            <Form.Control.Feedback type="invalid">
-              Please provide a valid zip.
-            </Form.Control.Feedback>
-          </Form.Group>
-        </Row>
-        <Form.Group className="mb-3">
-          <Form.Check
-            required
-            label="Agree to terms and conditions"
-            feedback="You must agree before submitting."
-            feedbackType="invalid"
-          />
-        </Form.Group>
-        <Button type="submit">Submit form</Button>
-      </Form>
-    </Container>
+      </div>
+    </>
   )
 }

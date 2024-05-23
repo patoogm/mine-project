@@ -20,6 +20,17 @@ const es = {
   aboutUs: {
     heading: "Involucrados directamente en la actividad minera en Argentina",
   },
+  contact: {
+    description: 'Descripcion en contacto',
+    namePlaceholder: "NOMBRE Y APELLIDO",
+    mailPlaceholder: "EMAIL",
+    phonePlaceholder: "TELÉFONO",
+    commentsPlaceholder: "COMENTARIOS",
+    nameError: "Por favor ingrese su nombre y apellido",
+    mailError: "Por favor ingrese su correo electrónico",
+    phoneError: "Por favor ingrese su teléfono",
+    sendButton: "ENVIAR"
+  }
 };
 
 export default es;
