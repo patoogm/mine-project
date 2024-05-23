@@ -1,16 +1,13 @@
 import { Footer } from "../components/Footer";
 import { NavbarComponent } from "../components/Navbar";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { LanguageContext } from "../contexts/LanguageContext";
 import "../styles/AboutUs.css";
-import { Button, Col, Container, Row, Card, Modal } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 
 export const AboutUs = () => {
   const useLanguage = () => useContext(LanguageContext);
   const { t } = useLanguage();
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
   return (
     <>
@@ -33,111 +30,24 @@ export const AboutUs = () => {
         </Row>
         <Row className="companyInfo">
           <Col id="aboutCompany">
-            <h1>Empresa</h1>
+            <h1>CONSORCIO MINERO</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+            CONSORCIO MINERO es un equipo de Empresarios y Profesionales de múltiples áreas, involucrados directamente en la actividad minera en Argentina, que busca aprovechar las experiencias individuales y beneficiarse de las mismas sinergias que resultan en compartirlas. 
             </p>
             <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
+            El largo camino recorrido por cada uno, desde una participación activa tanto en la evaluación, definición de proyectos, viabilidad de los desarrollos e INVERSIÓN, nos permiten aportar un abundante conocimiento en la consideración de nuevas alternativas que ARGENTINA presenta hoy con sus particulares circunstancias.
             </p>
+
+            <p>Involucrados en proyectos de Tantalio, Cobalto, Litio, Oro y Cobre, Cales y otros minerales, hoy participamos ACTIVAMENTE, de las nuevas e interesantes posibilidades de desarrollo. </p>
+
+            <p>Geólogos, Ingenieros, Abogados, Economistas, Administradores, compartimos desde la perspectiva de “tomador de riesgo”, las consideraciones que afectan la inversión, enriqueciendo la mirada sobre las inversiones. </p>
           </Col>
           <Col>
-            <h1>Nuestro objetivo</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+            <h1>Nuestra tarea</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita veniam blanditiis dolores atque dignissimos impedit quaerat exercitationem repellendus possimus fuga ratione debitis nemo quis officia tenetur iste doloremque ex dolore odio corrupti amet, quidem laborum. Culpa nostrum dignissimos ad iusto atque neque esse, molestiae a, provident iure inventore eveniet optio quia placeat aut omnis. Exercitationem esse deserunt culpa. Perferendis unde tempora impedit, asperiores, eligendi possimus exercitationem, in vitae laudantium hic perspiciatis deserunt aut voluptatibus veniam incidunt sed. Libero molestiae eaque quas magnam quidem, non consectetur blanditiis aliquam pariatur quasi deserunt illum officiis et corporis aut. Ipsum quia fugit laborum aut.</p>
+            
           </Col>
-          <Col>
-            <h1>¿Que hacemos al respecto?</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </Col>
-        </Row>
-        <Row id="teamInfo">
-          <Col sm={12}>
-            <h1>Nuestro Equipo</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </Col>
-          <Row className="cardsArea">
-            <Col sm={12} lg={4} md={6}>
-              <Card style={{ width: "18rem" }} onClick={handleShow}>
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the cards content.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-              <Modal show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
-                  <Modal.Title>Modal heading</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                  Woohoo, you are reading this text in a modal!
-                </Modal.Body>
-              </Modal>
-            </Col>
-            <Col sm={12} lg={4} md={6}>
-              <Card style={{ width: "18rem" }} onClick={handleShow}>
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the cards content.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-              <Modal show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
-                  <Modal.Title>Modal heading</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                  Woohoo, you are reading this text in a modal!
-                </Modal.Body>
-              </Modal>
-            </Col>
-            <Col sm={12} lg={4} md={6}>
-              <Card style={{ width: "18rem" }} onClick={handleShow}>
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the cards content.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-              <Modal show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
-                  <Modal.Title>Modal heading</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                  Woohoo, you are reading this text in a modal!
-                </Modal.Body>
-              </Modal>
-            </Col>
-          </Row>
         </Row>
       </Container>
       <Footer />

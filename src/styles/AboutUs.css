@@ -71,4 +71,6 @@ div .aboutUsContainer {
 
 .cardsArea > div {
   margin-top: 3rem !important;
+  display: flex;
+  justify-content: center;
 }

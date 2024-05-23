@@ -18,8 +18,7 @@ export const Main = () => {
       <Container className="infoBlock">
         <Row sm={12}>
           <Col sm={12}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor
+            Puesta en valor de proyectos y actividades mineras
           </Col>
         </Row>
         <Row sm={12}>
