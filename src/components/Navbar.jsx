@@ -20,7 +20,7 @@ export const NavbarComponent = () => {
   };
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary" fixed="top">
+    <Navbar expand="lg" className="bg-body-tertiary" sticky="top">
       <Container className="navbarContainer d-flex justify-content-between">
         <Navbar.Brand href="/">Mine Project</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

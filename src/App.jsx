@@ -2,8 +2,8 @@ import { Route, Routes } from 'react-router-dom'
 import { Home } from './pages/Home'
 import { ContactUs } from './pages/ContactUs'
 import { AboutUs } from './pages/AboutUs'
-import { Trajectory } from './pages/Trajectory'
 import { Projects } from './pages/Projects'
+import { OurTeam } from './pages/OurTeam'
 
 function App() {
 
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about-us' element={<AboutUs />} />
-        <Route path='/trajectory' element={<Trajectory />} />
+        <Route path='/our-team' element={<OurTeam />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/contact' element={<ContactUs />} />     
      </Routes>
