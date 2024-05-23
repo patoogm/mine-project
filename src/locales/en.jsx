@@ -16,6 +16,20 @@ const en = {
   },
   footer: {
     contactUs: "Contact us"
+  },
+  aboutUs: {
+    heading: "Involucrados directamente en la actividad minera en Argentina",
+  },
+  contact: {
+    description: 'Descripction contact',
+    namePlaceholder: "NAME AND SURNAME",
+    mailPlaceholder: "E-MAIL",
+    phonePlaceholder: "PHONE",
+    commentsPlaceholder: "COMMENTS",
+    nameError: "Please enter your first and last name",
+    mailError: "Please enter your email",
+    phoneError: "Please enter your phone",
+    sendButton: "SEND"
   }
 };
 
