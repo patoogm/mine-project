@@ -1,0 +1,14 @@
+.navBarSwitch {
+  display: flex;
+  align-items: center;
+  padding-right: 3rem;
+}
+
+#basic-navbar-nav > .me-auto {
+  align-items: baseline;
+}
+
+#basic-navbar-nav {
+  justify-content: flex-end;
+  flex-grow: 0;
+}
