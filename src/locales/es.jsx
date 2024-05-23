@@ -10,11 +10,13 @@ const es = {
     spanish: 'Español',
   },
   main: {
-    heading: 'Lorem ipsum dolor sit amet',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+    heading: 'Prueba Main',
+    description: 'Descripcion en el main',
     linkText: 'Lorem ipsum',
   },
-  // Otros textos...
+  footer: {
+    contactUs: "Contactanos"
+  }
 };
 
 export default es;

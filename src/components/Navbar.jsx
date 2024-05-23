@@ -6,7 +6,7 @@ import { useContext } from "react";
 export const NavbarComponent = () => {
   const useLanguage = () => useContext(LanguageContext);
 
-  const { t, changeLanguage,language  } = useLanguage();
+  const { t, changeLanguage, language } = useLanguage();
 
   const handleLanguageToggle = () => {
     changeLanguage(language === 'es' ? 'en' : 'es');
@@ -19,8 +19,8 @@ export const NavbarComponent = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <NavItem className="align-items-center">
-              <Form className="d-flex">
+            <NavItem>
+              <Form>
                 <Form.Check
                   type="switch"
                   id="languageSwitch"

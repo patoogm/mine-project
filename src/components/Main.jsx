@@ -1,16 +1,18 @@
 import { Col, Container, Row } from "react-bootstrap";
 import "../styles/Main.css";
+import { useContext } from "react";
+import { LanguageContext } from "../contexts/LanguageContext";
 
 export const Main = () => {
+  const useLanguage = () => useContext(LanguageContext);
+
+  const { t } = useLanguage();
   return (
     <div>
       <div className="img">
         <section className="imgText">
-          <h1>Lorem ipsum dolor sit amet</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor
-          </p>
+          <h1>{t.main.heading}</h1>
+          <p>{t.main.description}</p>
         </section>
       </div>
       <Container className="infoBlock">
