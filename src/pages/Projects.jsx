@@ -21,7 +21,7 @@ export const Projects = () => {
       <Container className="tableContainer">
         <Row sm={12}>
           <Col>
-            <TableProjects projectName={"PruebaProyecto"} location={"Tucuman"} description={"Prueba de Tabla"}/>
+            <TableProjects projectName={"PruebaProyecto"} locationProject={"Tucuman"} description={"Prueba de Tabla"}/>
           </Col>        
         </Row>
       </Container>
