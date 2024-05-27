@@ -1,61 +1,103 @@
-import {
-  Container,
-  Form,
-  Nav,
-  NavDropdown,
-  NavItem,
-  Navbar,
-} from "react-bootstrap";
+import { Form } from "react-bootstrap";
 import "../styles/Navbar.css";
 import { LanguageContext } from "../contexts/LanguageContext";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
+import BurguerIcon from "../assets/icons/burguerIcon";
+import { useNavigate } from "react-router-dom";
 
 export const NavbarComponent = () => {
   const useLanguage = () => useContext(LanguageContext);
+  const navigate = useNavigate();
 
   const { t, changeLanguage, language } = useLanguage();
+
+  const [collapse, setCollapse] = useState(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setCollapse(null);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const handleNavigate = (location) => {
+    navigate(location);
+  };
 
   const handleLanguageToggle = () => {
     changeLanguage(language === "es" ? "en" : "es");
   };
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary" sticky="top">
-      <Container className="navbarContainer d-flex justify-content-between">
-        <Navbar.Brand href="/">Mine Project</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <NavItem className="navBarSwitch">
-              <Form>
-                <Form.Check
-                  type="switch"
-                  id="languageSwitch"
-                  label={
-                    language === "en" ? t.navbar.english : t.navbar.spanish
-                  }
-                  checked={language === "en"}
-                  onChange={handleLanguageToggle}
-                />
-              </Form>
-            </NavItem>
-            <NavDropdown title="Menu" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/about-us">
-                {t.navbar.aboutUs}
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/trajectory">
-                {t.navbar.trajectory}
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/projects">
-                {t.navbar.projects}
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/contact">
-                {t.navbar.contact}
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <nav>
+      <div>
+        <div>Mine Project</div>
+        <div>
+          <div className="item" onClick={() => handleNavigate("/about-us")}>
+            {t.navbar.aboutUs}
+          </div>
+          <div className="item" onClick={() => handleNavigate("/our-team")}>
+            {t.navbar.trajectory}
+          </div>
+          <div className="item" onClick={() => handleNavigate("/projects")}>
+            {t.navbar.projects}
+          </div>
+          <div className="item" onClick={() => handleNavigate("/contact")}>
+            {t.navbar.contact}
+          </div>
+        </div>
+        <div>
+          <Form>
+            <div className="lan-switch-labels">
+              <label>{t.navbar.spanish}</label>
+              <Form.Check
+                type="switch"
+                id="languageSwitch"
+                label={""}
+                checked={language === "en"}
+                onChange={handleLanguageToggle}
+              />
+              <label>{t.navbar.english}</label>
+            </div>
+          </Form>
+          <button onClick={() => setCollapse((prev) => !prev)}>
+            <BurguerIcon />
+          </button>
+        </div>
+      </div>
+      <div
+        className={`${
+          collapse === null ? "d-none" : collapse ? "mm-open" : "mm-collapse"
+        } flex-column align-items-center`}
+      >
+        <div
+          className="item d-flex align-items-center"
+          onClick={() => handleNavigate("/about-us")}
+        >
+          {t.navbar.aboutUs}
+        </div>
+        <div
+          className="item d-flex align-items-center"
+          onClick={() => handleNavigate("/our-team")}
+        >
+          {t.navbar.trajectory}
+        </div>
+        <div
+          className="item d-flex align-items-center"
+          onClick={() => handleNavigate("/projects")}
+        >
+          {t.navbar.projects}
+        </div>
+        <div
+          className="item d-flex align-items-center"
+          onClick={() => handleNavigate("/contact")}
+        >
+          {t.navbar.contact}
+        </div>
+      </div>
+    </nav>
   );
 };
