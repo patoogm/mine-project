@@ -1,6 +1,5 @@
 import "../styles/AboutUs.css";
 import { Card, Col, Modal, Row } from "react-bootstrap";
-import PropTypes from "prop-types";
 import { useState } from "react";
 import "../styles/AboutUs.css";
 
@@ -34,10 +33,4 @@ export const UserCard = ({name, role, info}) => {
       </Modal>    
     </>
   );
-};
-
-UserCard.propTypes = {
-  name: PropTypes.string.isRequired,
-  role: PropTypes.string.isRequired,
-  info: PropTypes.string.isRequired,
 };
