@@ -17,18 +17,18 @@ export const TableProjects = ({projectName, locationProject, description}) => {
         <Table striped bordered hover>
             <thead>
                 <tr>
-                    <th>#</th>
                     <th>{t.projects.projectNameHeader}</th>
                     <th>{t.projects.location}</th>
                     <th>{t.projects.description}</th>
+                    <th>{t.projects.details}</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><Button variant="light" onClick={handleShow}>+</Button></td>
                     <td>{projectName}</td>
                     <td>{locationProject}</td>
                     <td>{description}</td>
+                    <td><Button variant="light" onClick={handleShow}>+</Button></td>
                 </tr>
             </tbody>
         </Table>

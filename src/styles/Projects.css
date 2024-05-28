@@ -35,3 +35,11 @@
 .tableContainer table {
     width: 100%;
 }
+
+.tableContainer table > thead > tr > th:last-child {
+    width: 5%;
+}
+
+.tableContainer table > tbody > tr > td:last-child button {
+    width: 100%;
+}
