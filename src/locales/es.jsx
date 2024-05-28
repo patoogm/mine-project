@@ -49,7 +49,8 @@ const es = {
     heading: "Identificación de oportunidades",
     projectNameHeader: "Proyecto",
     location: "Ubicación",
-    description: "Descripción"
+    description: "Descripción",
+    aboutProject: "El Distrito Minero El Quemado, se localiza en la Puna Salteña, en el límite de los departamentos Cachi y La Poma. Se extiende en una faja de norte a sur de aproximadamente 70 kilómetros."
   },
 };
 

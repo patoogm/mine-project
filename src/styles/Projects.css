@@ -23,8 +23,15 @@
 .tableContainer {
     margin-top: 3rem;
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.tableContainer > div:first-child {
+    width: 90%;
 }
 
 .tableContainer table {
-    width: 70%;
+    width: 100%;
 }

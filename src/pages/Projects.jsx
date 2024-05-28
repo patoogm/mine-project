@@ -19,9 +19,9 @@ export const Projects = () => {
         </section>
       </div>
       <Container className="tableContainer">
-        <Row sm={12}>
+        <Row>
           <Col>
-            <TableProjects projectName={"PruebaProyecto"} locationProject={"Tucuman"} description={"Prueba de Tabla"}/>
+            <TableProjects projectName={"El Quemado"} locationProject={"Puna Salteña"} description={"Prueba de Tabla"}/>
           </Col>        
         </Row>
       </Container>
