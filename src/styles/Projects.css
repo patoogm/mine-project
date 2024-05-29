@@ -23,8 +23,23 @@
 .tableContainer {
     margin-top: 3rem;
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.tableContainer > div:first-child {
+    width: 90%;
 }
 
 .tableContainer table {
-    width: 70%;
+    width: 100%;
+}
+
+.tableContainer table > thead > tr > th:last-child {
+    width: 5%;
+}
+
+.tableContainer table > tbody > tr > td:last-child button {
+    width: 100%;
 }

@@ -49,7 +49,9 @@ const en = {
     heading: "Identifying Opportunities",
     projectNameHeader: "Project",
     location: "Location",
-    description: "Description"
+    details: "Details",
+    description: "Description",
+    aboutProject: "The El Quemado Mining District is located in the Puna Salteña, on the border of the departments of Cachi and La Poma. It extends in a north-south strip of approximately 70 kilometers."
   },
 };
 

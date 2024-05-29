@@ -1,7 +1,7 @@
-import { Table } from "react-bootstrap"
+import { Button, Table, Modal } from "react-bootstrap"
 import PropTypes from "prop-types";
 import "../styles/Projects.css"
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { LanguageContext } from '../contexts/LanguageContext'
 
 
@@ -9,27 +9,35 @@ import { LanguageContext } from '../contexts/LanguageContext'
 export const TableProjects = ({projectName, locationProject, description}) => {
     const useLanguage = () => useContext(LanguageContext);
     const { t } = useLanguage();
-    
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
     
     return (<>
         <Table striped bordered hover>
             <thead>
                 <tr>
-                    <th>#</th>
                     <th>{t.projects.projectNameHeader}</th>
                     <th>{t.projects.location}</th>
                     <th>{t.projects.description}</th>
+                    <th>{t.projects.details}</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>1</td>
                     <td>{projectName}</td>
                     <td>{locationProject}</td>
                     <td>{description}</td>
+                    <td><Button variant="light" onClick={handleShow}>+</Button></td>
                 </tr>
             </tbody>
         </Table>
+        <Modal show={show} onHide={handleClose}>
+            <Modal.Header closeButton>
+            <Modal.Title>{projectName}</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>{t.projects.aboutProject}</Modal.Body>
+        </Modal>
     </>
     )
 };
