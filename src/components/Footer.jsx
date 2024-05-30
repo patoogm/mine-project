@@ -7,16 +7,14 @@ export const Footer = () => {
   const useLanguage = () => useContext(LanguageContext);
 
   const { t } = useLanguage();
-  
+
   return (
     <div className="footer-container">
       <Row sm={12}>
         <Col sm={12} lg={6}>
-          <h1>Eoliasur</h1>
+          <h1>{t.footer.name}</h1>
           <p>
-            Eoliasur, fundada en 2011, nace con la visión de ser un actor clave
-            en la transformación de la matriz energética a través del desarrollo
-            de energías renovables.
+            {t.footer.name}, {t.footer.description}
           </p>
         </Col>
         <Col sm={12} lg={6}>

@@ -10,15 +10,45 @@ const en = {
     spanish: "Spanish",
   },
   main: {
-    heading: "Test Main",
+    heading: "CONSORCIO MINERO",
     description: "Main description",
     linkText: "Lorem ipsum",
   },
   footer: {
     contactUs: "Contact us",
+    name: "Consorcio Minero",
+    description:
+      "a team of Entrepreneurs and Professionals from multiple areas, directly involved in the mining activity in Argentina",
   },
   aboutUs: {
-    heading: "Involucrados directamente en la actividad minera en Argentina",
+    buttonTextCompany: "Company",
+    buttonTextTeam: "Team",
+    heading: "Directly involved in mining activity in Argentina",
+    aboutUsText1:
+      "CONSORCIO MINERO is a team of Entrepreneurs and Professionals from multiple areas, directly involved in mining activity in Argentina, which seeks to take advantage of individual experiences and benefit from the same synergies that result from sharing them.",
+    aboutUsText2:
+      "The long road traveled by each of us, from a participation in active both in the evaluation, definition of projects, feasibility of developments and INVESTMENT, allow us to provide an abundant knowledge in the consideration of new alternatives that ARGENTINA presents today with its particular circumstances.",
+    aboutUsText3:
+      "Involved in Tantalium, Cobalt, Lithium, Gold and Copper, Lime and other mineral projects, today we participate ACTIVELY in the new and interesting possibilities of development.",
+    aboutUsText4:
+      "Geologists, Engineers, Lawyers, Economists, Administrators, share from the perspective of 'risk takers', the considerations that affect investment, enriching the view on investments.",
+
+    ourTask: "Our task",
+    ourTaskText1:
+      "Identification of opportunities: Based on in-depth knowledge of the country, provinces and localities, we identify deposits with high resource potential and presumption of mineral existence. ",
+    ourTaskText2:
+      "Evaluation of Property Titles: Considerations and confirmation of the validity of the titles for a suitable investment and within existing regulations. ",
+    ourTaskText3:
+      "Geological Consideration: Without reaching the confirmation of the resources, our task aims to validate the POTENTIALITY of the area: History of the area, nearby deposits, studies carried out (physical – geophysical; electromagnetic, superficial, etc.).",
+    ourTaskText4:
+      "Economic-Financial Definitions: Investment Plan to achieve the confirmation of mining resources in the searches and properties. Search for funding if necessary. ",
+    ourTaskText5:
+      "Investment Structuring: Form and adequacy of the Investment according to National and Provincial regulations.",
+    ourTaskText6:
+      "Execution of the Investment: Formation of the teams accompanying the majority shareholders, control of the execution of the tasks.  ",
+    ourTaskText7:
+      "Exit: Once the confirmation and NI:43101 standard (or equivalent) have been reached, proceed with the sale of the deposit.",
+
     juanT:
       "64 years old. She resides in the city of Buenos Aires. Graduate in Economics and MBA in business administration. 40 years of active participation in financial activity –both national and international- developing Private Banking – Investment Banking and Private Equity. He participates in Minera Ansotana S.A.   and Carachi Pampa Lithium (Partner). Passive partner at ALPRESTAMO (Fintech).",
     enriqueV:
@@ -51,7 +81,8 @@ const en = {
     location: "Location",
     details: "Details",
     description: "Description",
-    aboutProject: "The El Quemado Mining District is located in the Puna Salteña, on the border of the departments of Cachi and La Poma. It extends in a north-south strip of approximately 70 kilometers."
+    aboutProject:
+      "The El Quemado Mining District is located in the Puna Salteña, on the border of the departments of Cachi and La Poma. It extends in a north-south strip of approximately 70 kilometers.",
   },
 };
 

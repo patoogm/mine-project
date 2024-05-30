@@ -16,9 +16,39 @@ const es = {
   },
   footer: {
     contactUs: "Contactanos",
+    name: "Consorcio Minero",
+    description:
+      "un equipo de Empresarios y Profesionales de múltiples áreas, involucrados directamente en la actividad minera en Argentina",
   },
   aboutUs: {
+    buttonTextCompany: "Empresa",
+    buttonTextTeam: "Equipo",
     heading: "Involucrados directamente en la actividad minera en Argentina",
+    aboutUsText1:
+      "CONSORCIO MINERO es un equipo de Empresarios y Profesionales de múltiples áreas, involucrados directamente en la actividad minera en Argentina, que busca aprovechar las experiencias individuales y beneficiarse de las mismas sinergias que resultan en compartirlas.",
+    aboutUsText2:
+      "El largo camino recorrido por cada uno, desde una participación activa tanto en la evaluación, definición de proyectos, viabilidad de los desarrollos e INVERSIÓN, nos permiten aportar un abundante conocimiento en la consideración de nuevas alternativas que ARGENTINA presenta hoy con sus particulares circunstancias.",
+    aboutUsText3:
+      "Involucrados en proyectos de Tantalio, Cobalto, Litio, Oro y Cobre, Cales y otros minerales, hoy participamos ACTIVAMENTE, de las nuevas e interesantes posibilidades de desarrollo.",
+    aboutUsText4:
+      "Geólogos, Ingenieros, Abogados, Economistas, Administradores, compartimos desde la perspectiva de “tomador de riesgo”, las consideraciones que afectan la inversión, enriqueciendo la mirada sobre las inversiones.",
+
+    ourTask: "Nuestra tarea",
+    ourTaskText1:
+      "Identificación de oportunidades: A partir del conocimiento profundo del país, las provincias y localidades, identificamos los yacimientos con alto potencial de recursos y presunción de existencia minerales. ",
+    ourTaskText2:
+      "Evaluación de Títulos de Propiedad: Consideraciones y confirmación de la vigencia de los títulos para una inversión apta y dentro de las regulaciones existentes. ",
+    ourTaskText3:
+      "Consideración Geológica: Sin alcanzar la confirmación de los recursos, nuestra tarea apunta a convalidar la POTENCIALIDAD del área: Historia de la zona, yacimientos próximos, estudios realizados (físicos – geofísicos; electromagnéticos, superficiales, etc).",
+    ourTaskText4:
+      "Definiciones Económicas-Financieras: Plan de Inversión para alcanzar la confirmación de recursos mineros en los cateos y propiedades. Búsqueda del fondeo se fuese necesario. ",
+    ourTaskText5:
+      "Estructuración de la Inversión: Forma y adecuación de la Inversión de acuerdo a las normas Nacionales y Provinciales. ",
+    ourTaskText6:
+      "Ejecución de la Inversión: Conformación de los equipos acompañando a los accionistas mayoritarios, control de ejecuión de las tareas.  ",
+    ourTaskText7:
+      "Exit: Alcanzada la confirmación y norma NI:43101 (o equivalente), llevar adelante la venta del yacimiento. ",
+
     juanT:
       "64 años. Reside en la ciudad de Buenos Aires. Licenciado en Economía y MBA en administración de empresas. 40 años de participación activa en la actividad financiera –tanto nacional como internacional- desarrollando Banca Privada – Banca de Inversión y Private Equity. Participa en Minera Ansotana S.A.  y Carachi Pampa Lithium (Socio). Socio pasivo  en ALPRESTAMO (Fintech).",
     enriqueV:
@@ -51,7 +81,8 @@ const es = {
     location: "Ubicación",
     details: "Detalles",
     description: "Descripción",
-    aboutProject: "El Distrito Minero El Quemado, se localiza en la Puna Salteña, en el límite de los departamentos Cachi y La Poma. Se extiende en una faja de norte a sur de aproximadamente 70 kilómetros."
+    aboutProject:
+      "El Distrito Minero El Quemado, se localiza en la Puna Salteña, en el límite de los departamentos Cachi y La Poma. Se extiende en una faja de norte a sur de aproximadamente 70 kilómetros.",
   },
 };
 
