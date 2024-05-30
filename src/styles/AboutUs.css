@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -31,7 +32,7 @@
 }
 
 .aboutUsContainer > div:first-child {
-  background-color: rgb(0, 71, 224);
+  background-color: #003057;
 }
 
 .btnInPage {
@@ -41,6 +42,7 @@
 
 .btnInPage a {
   margin: 1rem 1rem 1rem 1rem;
+  min-width: 8rem;
 }
 
 div .aboutUsContainer {
@@ -50,7 +52,18 @@ div .aboutUsContainer {
 .aboutUsContainer > .companyInfo {
   margin-top: 3rem;
   display: flex;
+  text-align: center;
   flex-direction: column;
+}
+
+.companyInfo h1 {
+  color: #003057;
+}
+
+.companyInfo p {
+  text-align: start;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
 }
 
 .aboutUsContainer h1 {
@@ -61,7 +74,8 @@ div .aboutUsContainer {
 
 .aboutUsContainer p {
   font-weight: 400;
-  color: rgb(99, 99, 99);
+  font-size: 1rem;
+  color: #144272;
   padding: 0.8rem 0.8rem 0.4rem 0.8rem;
 }
 

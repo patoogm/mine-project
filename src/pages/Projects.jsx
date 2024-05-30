@@ -3,7 +3,7 @@ import { NavbarComponent } from "../components/Navbar";
 import { useContext } from "react";
 import { LanguageContext } from "../contexts/LanguageContext";
 import "../styles/Projects.css";
-import {Col, Container, Row} from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { TableProjects } from "../components/Table";
 
 export const Projects = () => {
@@ -21,8 +21,12 @@ export const Projects = () => {
       <Container className="tableContainer">
         <Row>
           <Col>
-            <TableProjects projectName={"El Quemado"} locationProject={"Puna Salteña"} description={"Prueba de Tabla"}/>
-          </Col>        
+            <TableProjects
+              projectName={"El Quemado"}
+              locationProject={"Puna Salteña"}
+              description={"Prueba de Tabla"}
+            />
+          </Col>
         </Row>
       </Container>
       <Footer />
