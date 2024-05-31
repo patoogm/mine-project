@@ -3,7 +3,7 @@ import { NavbarComponent } from "../components/Navbar";
 import { useContext } from "react";
 import { LanguageContext } from "../contexts/LanguageContext";
 import "../styles/AboutUs.css";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 
 export const AboutUs = () => {
   const useLanguage = () => useContext(LanguageContext);
@@ -19,14 +19,7 @@ export const AboutUs = () => {
       </div>
       <Container className="aboutUsContainer">
         <Row>
-          <Col className="btnInPage">
-            <Button href="#aboutCompany" variant="secondary">
-              {t.aboutUs.buttonTextCompany}
-            </Button>
-            <Button href="#teamInfo" variant="secondary">
-              {t.aboutUs.buttonTextTeam}
-            </Button>
-          </Col>
+          
         </Row>
         <Row className="companyInfo">
           <Col>

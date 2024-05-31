@@ -7,9 +7,10 @@
 }
 
 .img {
-  background-image: url("https://eoliasur.com/wp-content/uploads/2019/11/eoliasur-web-2020-1.jpg?id=1288");
+  background-image: url("https://fondosmil.co/fondo/88177.jpg");
   background-repeat: no-repeat;
   height: 30rem;
+  background-position-y: -275px
 }
 
 .imgTextAboutUs {
@@ -87,4 +88,15 @@ div .aboutUsContainer {
   margin-top: 3rem !important;
   display: flex;
   justify-content: center;
+}
+
+.img-modal {
+  height: 400px;
+}
+
+.ourTeamInfo {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #144272;
+  text-align: center;
 }

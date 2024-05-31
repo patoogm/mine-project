@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 .img {
-  background-image: url("https://eoliasur.com/wp-content/uploads/2019/11/eoliasur-web-2020-1.jpg?id=1288");
-  background-repeat: no-repeat;
+  background-image: url("https://fondosmil.co/fondo/88177.jpg");
+  background-repeat: round;
   height: 30rem;
+  background-position-y: -275px
 }
 
 * {
@@ -75,7 +76,7 @@ div .infoBlock {
 }
 
 .infoBlock > div:nth-child(2) > div > a:hover {
-  background-color: rgb(5, 63, 187);
+  background-color: rgb(54, 93, 125);
   transition: 0.6s;
 }
 

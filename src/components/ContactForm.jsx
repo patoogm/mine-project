@@ -26,14 +26,9 @@ export const ContactForm = () => {
       <div className="form-container">
         <Row sm={12} className='justify-content-center'>
           <Col sm={12} lg={5}>
-            <h3>PROPIETARIOS DE CAMPOS</h3>
-            <p>
-            La instalación de un proyecto de energía renovable en tu terreno constituye una oportunidad única para asegurarte un flujo constante de ingresos adicionales a largo plazo mientras continuás con la explotación principal de la tierra.
-
-            En Eoliasur buscamos crear alianzas sólidas y transparentes con los propietarios de campos en los que desarrollamos nuestros proyectos. Creemos que trabajando en conjunto es la mejor manera de llevar a cabo proyectos sostenibles tanto desde el punto de vista ambiental, social y económico. Ponemos especial foco en crear un diseño óptimo para el proyecto respetando el ecosistema y cuidando las instalaciones existentes de los campos.
-
-            Si estás interesado, ¡Contactanos!
-            </p>
+            <h3>{t.contact.title}</h3>
+            <p className='my-4'>{t.contact.messageFirstLine}</p>
+            <p className='my-4'>{t.contact.messageSecondLine}</p>
           </Col>
           <Col sm={12} lg={5}>
             <Container>

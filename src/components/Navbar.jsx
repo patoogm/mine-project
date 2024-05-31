@@ -34,7 +34,9 @@ export const NavbarComponent = () => {
   return (
     <nav>
       <div>
-        <div>Mine Project</div>
+          <div className="title" onClick={() => handleNavigate("/")}>
+            Consorcio Minero
+          </div>
         <div>
           <div className="item" onClick={() => handleNavigate("/about-us")}>
             {t.navbar.aboutUs}

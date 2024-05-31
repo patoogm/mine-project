@@ -1,16 +1,15 @@
 import "../styles/AboutUs.css";
 import { Card, Col, Modal, Row } from "react-bootstrap";
 import { useState } from "react";
-import "../styles/AboutUs.css";
 
-export const UserCard = ({name, role, info}) => {
+export const UserCard = ({name, role, info, imageSrc}) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
     <>
-      <Card style={{ width: "18rem" }} onClick={handleShow}>
-        <Card.Img variant="top" src="holder.js/100px180" />
+      <Card style={{ width: "20rem" }} onClick={handleShow}>
+        <Card.Img variant="top" src={imageSrc} />
         <Card.Body>
           <Card.Title>{name}</Card.Title>
           <Card.Text>{role}</Card.Text>
@@ -23,7 +22,7 @@ export const UserCard = ({name, role, info}) => {
         <Modal.Body>
           <Row>
             <Col sm={12} lg={6} md={6}>
-              Imagen
+              <img className="img-modal" src={imageSrc} alt="" />
             </Col>
             <Col sm={12} lg={6} md={6}>
               {info}

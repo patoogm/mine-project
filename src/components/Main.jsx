@@ -22,7 +22,7 @@ export const Main = () => {
       </div>
       <Container className="infoBlock">
         <Row sm={12}>
-          <Col sm={12}>Puesta en valor de proyectos y actividades mineras</Col>
+          <Col sm={12}>{t.main.message}</Col>
         </Row>
         <Row sm={12}>
           <Col sm={12} md={4}>

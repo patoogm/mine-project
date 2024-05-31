@@ -30,6 +30,9 @@
 
 .tableContainer > div:first-child {
     width: 90%;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #144272;
 }
 
 .tableContainer table {
