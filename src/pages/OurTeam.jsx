@@ -10,6 +10,7 @@ import enriquePAImage from '../statics/enriquepa.jpg';
 import alejandroSImage from '../statics/alejandros.jpg';
 import nicolasHImage from '../statics/nicolash.jpg';
 import alvaroGImage from '../statics/alvarog.jpg';
+import enriqueVImage from '../statics/enriquev.jpg';
 import "../styles/AboutUs.css";
 
 
@@ -32,7 +33,7 @@ export const OurTeam = () => {
             <UserCard name="Juan Taussig" role="CEO" info={t.aboutUs.juanT} imageSrc={juanTImage} />
           </Col>
           <Col sm={12} lg={4} md={6}>
-            <UserCard name="Enrique Vidal" role="CEO" info={t.aboutUs.enriqueV} />
+            <UserCard name="Enrique Vidal" role="CEO" info={t.aboutUs.enriqueV} imageSrc={enriqueVImage} />
           </Col>
           <Col sm={12} lg={4} md={6}>
             <UserCard name="Víctor Taussig" role="CEO" info={t.aboutUs.victorT} imageSrc={victorTImage} />

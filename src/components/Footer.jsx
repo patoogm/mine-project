@@ -28,14 +28,14 @@ export const Footer = () => {
             <p>(+5411) 4774 8567</p>
           </Col>
           <Col>
-            <p>info@eoliasur.com</p>
+            <p>info@consorciominero.com</p>
           </Col>
         </Col>
       </Row>
       <Row sm={12}>
         <Col>
           <p>
-            Copyright Eolia Renovables S.A. 2024 - All Rights Reserved |
+            Copyright Consorcio Minero S.A. 2024 - All Rights Reserved |
             Desarrollado por JTDIGITALT
           </p>
         </Col>
