@@ -4,7 +4,7 @@
   background-image: url("https://fondosmil.co/fondo/88177.jpg");
   background-repeat: round;
   height: 30rem;
-  background-position-y: -275px
+  background-position-y: -275px;
 }
 
 * {
@@ -73,6 +73,7 @@ div .infoBlock {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.4rem;
 }
 
 .infoBlock > div:nth-child(2) > div > a:hover {

@@ -12,7 +12,8 @@ const es = {
   main: {
     heading: "CONSORCIO MINERO",
     description: "Argentina",
-    message: "Puesta en valor de proyectos y actividades mineras"
+    message:
+      "Experiencia en el desarrollo y puesta en valor de proyectos relacionados con actividades mineras y energéticas",
   },
   footer: {
     contactUs: "Contactanos",
@@ -66,8 +67,10 @@ const es = {
   contact: {
     description: "Descripcion en contacto",
     title: "Proyectos para desarrollar",
-    messageFirstLine: "La oportunidad única que se da en el contexto actual de Argentina hace que recibamos periódicamente solicitudes sobre proyectos mineros y energía renovables tanto de fondos de inversión e interesados particulares.",
-    messageSecondLine: "Si tenés un proyecto que te interesaría que analicemos, ¡Contáctanos!",
+    messageFirstLine:
+      "La oportunidad única que se da en el contexto actual de Argentina hace que recibamos periódicamente solicitudes sobre proyectos mineros y energía renovables tanto de fondos de inversión e interesados particulares.",
+    messageSecondLine:
+      "Si tenés un proyecto que te interesaría que analicemos, ¡Contáctanos!",
     namePlaceholder: "NOMBRE Y APELLIDO",
     mailPlaceholder: "EMAIL",
     phonePlaceholder: "TELÉFONO",

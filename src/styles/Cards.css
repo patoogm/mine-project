@@ -1,0 +1,17 @@
+.plusIcon {
+  font-size: 1.8rem;
+  position: absolute;
+  bottom: 7rem;
+  display: flex;
+  justify-content: center;
+  color: #003057;
+}
+
+.imgContainer i {
+  display: none;
+}
+
+.card:hover i {
+  display: block;
+  transition: 0.3s;
+}

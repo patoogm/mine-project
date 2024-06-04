@@ -1,15 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-
 .imgTextProjects {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    color: white;
-    font-family: "Montserrat", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  font-family: "Montserrat", sans-serif;
 }
 
 .imgTextProjects > h1 {
@@ -21,28 +20,26 @@
 }
 
 .tableContainer {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    padding: 0;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 0;
 }
 
 .tableContainer > div:first-child {
-    width: 90%;
-    font-weight: 400;
-    font-size: 1rem;
-    color: #144272;
+  width: 100%;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #144272;
 }
 
-.tableContainer table {
-    width: 100%;
+.tableContainer > div:first-child > div ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.tableContainer table > thead > tr > th:last-child {
-    width: 5%;
-}
-
-.tableContainer table > tbody > tr > td:last-child button {
-    width: 100%;
+.m-3 {
+  list-style: none;
 }

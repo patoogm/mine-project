@@ -12,7 +12,8 @@ const en = {
   main: {
     heading: "CONSORCIO MINERO",
     description: "Argentina",
-    message: "Enhancing mining projects and activities"
+    message:
+      "Experience in the development and enhancement of projects related to mining and energy activities",
   },
   footer: {
     contactUs: "Contact us",
@@ -67,8 +68,10 @@ const en = {
   contact: {
     description: "Descripction contact",
     title: "Projects to develop",
-    messageFirstLine: "The unique opportunity that exists in the current context of Argentina means that we periodically receive requests for mining and renewable energy projects from both investment funds and individual interested parties.",
-    messageSecondLine: "If you have a project that you would be interested in us analyzing, Contact us!",
+    messageFirstLine:
+      "The unique opportunity that exists in the current context of Argentina means that we periodically receive requests for mining and renewable energy projects from both investment funds and individual interested parties.",
+    messageSecondLine:
+      "If you have a project that you would be interested in us analyzing, Contact us!",
     namePlaceholder: "NAME AND SURNAME",
     mailPlaceholder: "E-MAIL",
     phonePlaceholder: "PHONE",
