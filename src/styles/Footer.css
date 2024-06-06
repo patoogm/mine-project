@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 .footer-container {
-  background-color: #262626;
+  background-color: #144272;
   color: white;
   font-family: "Montserrat", sans-serif;
 }
@@ -29,7 +29,7 @@
 .footer-container > div:nth-child(2) {
   font-size: 0.7rem;
   text-align: center;
-  background-color: #222222;
+  background-color: #003057;
 }
 
 @media all and (min-width: 992px) {

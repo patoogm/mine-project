@@ -1,12 +1,13 @@
 import { Button, Modal } from "react-bootstrap";
 import "../styles/Projects.css";
 import { useState } from "react";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export const TableProjects = ({
   projectName,
   locationProject,
   description,
-  modal
+  modal,
 }) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -16,7 +17,8 @@ export const TableProjects = ({
     <>
       <ul>
         <li className="m-3">
-          <span>{projectName} - </span>
+          <i className="bi bi-minecart-loaded"></i>
+          <span> {projectName} - </span>
           <span>{locationProject} - </span>
           <span>{description} - </span>
           <Button variant="primary" onClick={handleShow}>

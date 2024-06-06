@@ -4,6 +4,7 @@ import { useContext } from "react";
 import { LanguageContext } from "../contexts/LanguageContext";
 import "../styles/AboutUs.css";
 import { Col, Container, Row } from "react-bootstrap";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export const AboutUs = () => {
   const useLanguage = () => useContext(LanguageContext);
@@ -18,9 +19,6 @@ export const AboutUs = () => {
         </section>
       </div>
       <Container className="aboutUsContainer">
-        <Row>
-          
-        </Row>
         <Row className="companyInfo">
           <Col>
             <h1>{t.main.heading}</h1>
@@ -31,13 +29,34 @@ export const AboutUs = () => {
           </Col>
           <Col>
             <h1>{t.aboutUs.ourTask}</h1>
-            <p>{t.aboutUs.ourTaskText1}</p>
-            <p>{t.aboutUs.ourTaskText2}</p>
-            <p>{t.aboutUs.ourTaskText3}</p>
-            <p>{t.aboutUs.ourTaskText4}</p>
-            <p>{t.aboutUs.ourTaskText5}</p>
-            <p>{t.aboutUs.ourTaskText6}</p>
-            <p>{t.aboutUs.ourTaskText7}</p>
+            <p>
+              <i className="bi bi-caret-right-fill"></i>
+              {t.aboutUs.ourTaskText1}
+            </p>
+            <p>
+              <i className="bi bi-caret-right-fill"></i>
+              {t.aboutUs.ourTaskText2}
+            </p>
+            <p>
+              <i className="bi bi-caret-right-fill"></i>
+              {t.aboutUs.ourTaskText3}
+            </p>
+            <p>
+              <i className="bi bi-caret-right-fill"></i>
+              {t.aboutUs.ourTaskText4}
+            </p>
+            <p>
+              <i className="bi bi-caret-right-fill"></i>
+              {t.aboutUs.ourTaskText5}
+            </p>
+            <p>
+              <i className="bi bi-caret-right-fill"></i>
+              {t.aboutUs.ourTaskText6}
+            </p>
+            <p>
+              <i className="bi bi-caret-right-fill"></i>
+              {t.aboutUs.ourTaskText7}
+            </p>
           </Col>
         </Row>
       </Container>

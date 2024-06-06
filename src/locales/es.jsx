@@ -10,9 +10,10 @@ const es = {
     spanish: "Español",
   },
   main: {
-    heading: "CONSORCIO MINERO",
+    heading: "CONSORCIO PARA EL DESARROLLO DE PROYECTOS MINEROS Y ENERGETICOS",
     description: "Argentina",
-    message: "Puesta en valor de proyectos y actividades mineras"
+    message:
+      "Experiencia en el desarrollo y puesta en valor de proyectos relacionados con actividades mineras y energéticas",
   },
   footer: {
     contactUs: "Contactanos",
@@ -24,6 +25,13 @@ const es = {
     buttonTextCompany: "Empresa",
     buttonTextTeam: "Equipo",
     heading: "Involucrados directamente en la actividad minera en Argentina",
+
+    ourTeamTitle: "Nuestro Equipo",
+    ourTeamText1:
+      "Acompañamos el proceso desde el inicio de la actividad hasta la puesta en valor del mismo.",
+    ourTeamText2:
+      "Nuestro grupo está formado por técnicos y personal de alto nivel y experiencia en cada rubro necesario.",
+
     aboutUsText1:
       "CONSORCIO MINERO es un equipo de Empresarios y Profesionales de múltiples áreas, involucrados directamente en la actividad minera en Argentina, que busca aprovechar las experiencias individuales y beneficiarse de las mismas sinergias que resultan en compartirlas.",
     aboutUsText2:
@@ -66,8 +74,10 @@ const es = {
   contact: {
     description: "Descripcion en contacto",
     title: "Proyectos para desarrollar",
-    messageFirstLine: "La oportunidad única que se da en el contexto actual de Argentina hace que recibamos periódicamente solicitudes sobre proyectos mineros y energía renovables tanto de fondos de inversión e interesados particulares.",
-    messageSecondLine: "Si tenés un proyecto que te interesaría que analicemos, ¡Contáctanos!",
+    messageFirstLine:
+      "La oportunidad única que se da en el contexto actual de Argentina hace que recibamos periódicamente solicitudes sobre proyectos mineros y energía renovables tanto de fondos de inversión e interesados particulares.",
+    messageSecondLine:
+      "Si tenés un proyecto que te interesaría que analicemos, ¡Contáctanos!",
     namePlaceholder: "NOMBRE Y APELLIDO",
     mailPlaceholder: "EMAIL",
     phonePlaceholder: "TELÉFONO",

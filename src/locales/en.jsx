@@ -12,7 +12,8 @@ const en = {
   main: {
     heading: "CONSORCIO MINERO",
     description: "Argentina",
-    message: "Enhancing mining projects and activities"
+    message:
+      "Experience in the development and enhancement of projects related to mining and energy activities",
   },
   footer: {
     contactUs: "Contact us",
@@ -24,6 +25,13 @@ const en = {
     buttonTextCompany: "Company",
     buttonTextTeam: "Team",
     heading: "Directly involved in mining activity in Argentina",
+
+    ourTeamTitle: "Our Team",
+    ourTeamText1:
+      "We accompany the process from the beginning of the activity to its enhancement.",
+    ourTeamText2:
+      "Our group is made up of technicians and personnel of high level and experience in each necessary area.",
+
     aboutUsText1:
       "CONSORCIO MINERO is a team of Entrepreneurs and Professionals from multiple areas, directly involved in mining activity in Argentina, which seeks to take advantage of individual experiences and benefit from the same synergies that result from sharing them.",
     aboutUsText2:
@@ -67,8 +75,10 @@ const en = {
   contact: {
     description: "Descripction contact",
     title: "Projects to develop",
-    messageFirstLine: "The unique opportunity that exists in the current context of Argentina means that we periodically receive requests for mining and renewable energy projects from both investment funds and individual interested parties.",
-    messageSecondLine: "If you have a project that you would be interested in us analyzing, Contact us!",
+    messageFirstLine:
+      "The unique opportunity that exists in the current context of Argentina means that we periodically receive requests for mining and renewable energy projects from both investment funds and individual interested parties.",
+    messageSecondLine:
+      "If you have a project that you would be interested in us analyzing, Contact us!",
     namePlaceholder: "NAME AND SURNAME",
     mailPlaceholder: "E-MAIL",
     phonePlaceholder: "PHONE",
