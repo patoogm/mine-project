@@ -22,12 +22,11 @@ export const OurTeam = () => {
       <NavbarComponent />
       <Row className="gx-0 my-4 ourTeamInfo justify-content-center">
         <Col sm={12}>
-          <h1>Nuestro Equipo</h1>
+          <h1>{t.aboutUs.ourTeamTitle}</h1>
         </Col>
         <Col className="my-4" sm={10}>
-          <p>
-            Acompañamos el proceso desde el inicio de la actividad hasta la puesta en valor del mismo. Nuestro grupo está formado por técnicos y personal de alto nivel y experiencia en cada rubro necesario
-          </p>
+          <p>{t.aboutUs.ourTeamText1}</p>
+          <p>{t.aboutUs.ourTeamText2}</p>
         </Col>
         <Row className="cardsArea">
           <Col sm={12} lg={4} md={6}>

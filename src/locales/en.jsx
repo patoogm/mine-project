@@ -25,6 +25,13 @@ const en = {
     buttonTextCompany: "Company",
     buttonTextTeam: "Team",
     heading: "Directly involved in mining activity in Argentina",
+
+    ourTeamTitle: "Our Team",
+    ourTeamText1:
+      "We accompany the process from the beginning of the activity to its enhancement.",
+    ourTeamText2:
+      "Our group is made up of technicians and personnel of high level and experience in each necessary area.",
+
     aboutUsText1:
       "CONSORCIO MINERO is a team of Entrepreneurs and Professionals from multiple areas, directly involved in mining activity in Argentina, which seeks to take advantage of individual experiences and benefit from the same synergies that result from sharing them.",
     aboutUsText2:

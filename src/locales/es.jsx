@@ -25,6 +25,13 @@ const es = {
     buttonTextCompany: "Empresa",
     buttonTextTeam: "Equipo",
     heading: "Involucrados directamente en la actividad minera en Argentina",
+
+    ourTeamTitle: "Nuestro Equipo",
+    ourTeamText1:
+      "Acompañamos el proceso desde el inicio de la actividad hasta la puesta en valor del mismo.",
+    ourTeamText2:
+      "Nuestro grupo está formado por técnicos y personal de alto nivel y experiencia en cada rubro necesario.",
+
     aboutUsText1:
       "CONSORCIO MINERO es un equipo de Empresarios y Profesionales de múltiples áreas, involucrados directamente en la actividad minera en Argentina, que busca aprovechar las experiencias individuales y beneficiarse de las mismas sinergias que resultan en compartirlas.",
     aboutUsText2:

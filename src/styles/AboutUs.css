@@ -5,13 +5,6 @@
   padding: 0;
 }
 
-.img {
-  background-image: url("https://fondosmil.co/fondo/88177.jpg");
-  background-repeat: no-repeat;
-  height: 30rem;
-  background-position-y: -275px;
-}
-
 .imgTextAboutUs {
   display: flex;
   flex-direction: column;
@@ -108,4 +101,8 @@ div .aboutUsContainer {
   font-size: 1rem;
   color: #144272;
   text-align: center;
+}
+
+.ourTeamInfo > div:nth-child(2) p {
+  font-size: 1.3rem;
 }
