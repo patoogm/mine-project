@@ -74,6 +74,7 @@ div .infoBlock {
   justify-content: center;
   align-items: center;
   font-size: 1.4rem;
+  cursor: pointer;
 }
 
 .infoBlock > div:nth-child(2) > div > a:hover {

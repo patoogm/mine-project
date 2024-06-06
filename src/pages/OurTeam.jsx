@@ -26,14 +26,7 @@ export const OurTeam = () => {
         </Col>
         <Col className="my-4" sm={10}>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
-            consequatur dolorum, dolorem rem nemo possimus qui voluptatibus
-            asperiores debitis hic amet sed quod reiciendis quisquam atque iure
-            magnam ex libero quo. Obcaecati earum tempore repellendus nemo atque
-            voluptates ullam quo incidunt numquam sequi perspiciatis
-            exercitationem harum laborum molestiae quibusdam itaque debitis,
-            natus repellat! Reprehenderit ea fuga maxime ducimus laborum itaque
-            iste, assumenda minima culpa aut eaque temporibus quos dolor quia.
+            Acompañamos el proceso desde el inicio de la actividad hasta la puesta en valor del mismo. Nuestro grupo está formado por técnicos y personal de alto nivel y experiencia en cada rubro necesario
           </p>
         </Col>
         <Row className="cardsArea">

@@ -22,9 +22,6 @@ export const Footer = () => {
             <h2>{t.footer.contactUs}</h2>
           </Col>
           <Col>
-            <p>Sinclair 3244, 2do piso, CABA, Argentina</p>
-          </Col>
-          <Col>
             <p>(+5411) 4774 8567</p>
           </Col>
           <Col>

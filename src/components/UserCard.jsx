@@ -12,7 +12,7 @@ export const UserCard = ({ name, role, info, imageSrc }) => {
       <Card style={{ width: "20rem" }} onClick={handleShow}>
         <Row className="g-0 imgContainer">
           <Card.Img variant="top" src={imageSrc} />
-          <i className="bi bi-plus-circle plusIcon"></i>
+          <i className="bi bi-plus-circle-fill plusIcon"></i>
         </Row>
         <Card.Body>
           <Card.Title>{name}</Card.Title>

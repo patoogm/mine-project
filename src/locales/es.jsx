@@ -10,10 +10,10 @@ const es = {
     spanish: "Español",
   },
   main: {
-    heading: "CONSORCIO MINERO",
+    heading: "CONSORCIO PARA EL DESARROLLO DE PROYECTOS MINEROS Y ENERGETICOS",
     description: "Argentina",
     message:
-      "Experiencia en el desarrollo y puesta en valor de proyectos relacionados con actividades mineras y energéticas",
+      "Experiencia en el desarrollo y puesta en valor de proyectos relacionados con actividades mineras y energéticas",
   },
   footer: {
     contactUs: "Contactanos",
