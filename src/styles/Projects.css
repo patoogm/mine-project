@@ -17,6 +17,7 @@
   text-align: center;
   font-weight: 700;
   margin: 0 0.5rem 0 0.5rem;
+  text-shadow: 0.3rem 0.3rem 0.2rem #144272;
 }
 
 .tableContainer {
@@ -42,4 +43,24 @@
 
 .m-3 {
   list-style: none;
+}
+
+.custom-info-button {
+    background-color: #003057 !important;
+    border-color: #003057 !important;
+    color: white !important; /* Color del texto */
+}
+
+.custom-info-button:hover {
+    background-color: #144272 !important;
+    border-color: #144272 !important;
+}
+
+.custom-info-button:active {
+    background-color: #0b2644 !important;
+    border-color: #0b2644 !important;
+}
+
+.project-text {
+  font-weight: 550;
 }

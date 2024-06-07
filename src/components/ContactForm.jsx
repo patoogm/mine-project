@@ -26,7 +26,7 @@ export const ContactForm = () => {
       <div className="form-container">
         <Row sm={12} className='justify-content-center'>
           <Col sm={12} lg={5}>
-            <h3>{t.contact.title}</h3>
+            <h2>{t.contact.title}</h2>
             <p className='my-4'>{t.contact.messageFirstLine}</p>
             <p className='my-4'>{t.contact.messageSecondLine}</p>
           </Col>
@@ -92,7 +92,7 @@ export const ContactForm = () => {
                     />
                   </Form.Group>
                 </Row>
-                <Button type="submit">{t.contact.sendButton}</Button>
+                <Button className='custom-info-button' type="submit">{t.contact.sendButton}</Button>
               </Form>
             </Container>
           </Col>

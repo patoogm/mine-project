@@ -22,6 +22,8 @@
   font-weight: 700;
   padding-left: 0.4rem;
   padding-right: 0.4rem;
+  text-shadow: 0.3rem 0.3rem 0.2rem #144272;
+
 }
 
 .btnInPage {
@@ -52,12 +54,13 @@ div .aboutUsContainer {
 
 .companyInfo h1 {
   color: #003057;
+  text-decoration: underline;
 }
 
 .companyInfo p {
   text-align: start;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .aboutUsContainer h1 {
@@ -67,7 +70,7 @@ div .aboutUsContainer {
 }
 
 .aboutUsContainer p {
-  font-weight: 400;
+  font-weight: 550;
   font-size: 1rem;
   color: #144272;
   padding: 0.8rem 0.8rem 0.4rem 0.8rem;
@@ -97,12 +100,14 @@ div .aboutUsContainer {
 }
 
 .ourTeamInfo {
-  font-weight: 400;
+  font-weight: 550;
   font-size: 1rem;
-  color: #144272;
+  color: #003057;
   text-align: center;
 }
-
+.ourTeamInfo h2 {
+  text-decoration: underline;
+}
 .ourTeamInfo > div:nth-child(2) p {
   font-size: 1.1rem;
 }

@@ -4,6 +4,7 @@ import { LanguageContext } from "../contexts/LanguageContext";
 import { useContext, useEffect, useState } from "react";
 import BurguerIcon from "../assets/icons/burguerIcon";
 import { useNavigate } from "react-router-dom";
+import logo from '../statics/logo1.png'
 
 export const NavbarComponent = () => {
   const useLanguage = () => useContext(LanguageContext);
@@ -34,8 +35,8 @@ export const NavbarComponent = () => {
   return (
     <nav>
       <div>
-          <div className="title" onClick={() => handleNavigate("/")}>
-            Consorcio Minero
+          <div className="logo" onClick={() => handleNavigate("/")}>
+            <img className="img-logo" src={logo} alt="logo" />
           </div>
         <div>
           <div className="item" onClick={() => handleNavigate("/about-us")}>

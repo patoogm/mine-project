@@ -22,7 +22,7 @@ export const OurTeam = () => {
       <NavbarComponent />
       <Row className="gx-0 my-4 ourTeamInfo justify-content-center">
         <Col sm={12}>
-          <h1>{t.aboutUs.ourTeamTitle}</h1>
+          <h2>{t.aboutUs.ourTeamTitle}</h2>
         </Col>
         <Col className="my-4" sm={10}>
           <p>{t.aboutUs.ourTeamText1}</p>
@@ -32,7 +32,6 @@ export const OurTeam = () => {
           <Col sm={12} lg={4} md={6}>
             <UserCard
               name="Juan Taussig"
-              role="CEO"
               info={t.aboutUs.juanT}
               imageSrc={juanTImage}
             />
@@ -40,7 +39,6 @@ export const OurTeam = () => {
           <Col sm={12} lg={4} md={6}>
             <UserCard
               name="Enrique Vidal"
-              role="CEO"
               info={t.aboutUs.enriqueV}
               imageSrc={enriqueVImage}
             />
@@ -48,7 +46,6 @@ export const OurTeam = () => {
           <Col sm={12} lg={4} md={6}>
             <UserCard
               name="Víctor Taussig"
-              role="CEO"
               info={t.aboutUs.victorT}
               imageSrc={victorTImage}
             />
@@ -56,7 +53,6 @@ export const OurTeam = () => {
           <Col sm={12} lg={4} md={6}>
             <UserCard
               name="Enrique Perez Antich"
-              role="CEO"
               info={t.aboutUs.enriquePA}
               imageSrc={enriquePAImage}
             />
@@ -64,7 +60,6 @@ export const OurTeam = () => {
           <Col sm={12} lg={4} md={6}>
             <UserCard
               name="Alejandro Emilio Sanchez"
-              role="CEO"
               info={t.aboutUs.alejandroS}
               imageSrc={alejandroSImage}
             />
@@ -72,7 +67,6 @@ export const OurTeam = () => {
           <Col sm={12} lg={4} md={6}>
             <UserCard
               name="Nicolás Herrera"
-              role="CEO"
               info={t.aboutUs.nicolasH}
               imageSrc={nicolasHImage}
             />
@@ -80,7 +74,6 @@ export const OurTeam = () => {
           <Col sm={12} lg={4} md={6}>
             <UserCard
               name="Álvaro D. Guerrero"
-              role="CEO"
               info={t.aboutUs.alvaroG}
               imageSrc={alvaroGImage}
             />

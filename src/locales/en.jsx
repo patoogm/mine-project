@@ -4,43 +4,38 @@ const en = {
     aboutUs: "About Us",
     trajectory: "Trajectory",
     projects: "Projects",
-    contact: "Put in value",
+    contact: "Contact",
     language: "Language",
     english: "English",
     spanish: "Spanish",
   },
   main: {
-    heading: "CONSORCIO MINERO",
+    heading: "CONSORTIUM FOR THE DEVELOPMENT OF MINING AND ENERGY PROJECTS",
     description: "Argentina",
     message:
       "Experience in the development and enhancement of projects related to mining and energy activities",
   },
   footer: {
     contactUs: "Contact us",
-    name: "Consorcio Minero",
-    description:
-      "a team of Entrepreneurs and Professionals from multiple areas, directly involved in the mining activity in Argentina",
   },
   aboutUs: {
     buttonTextCompany: "Company",
     buttonTextTeam: "Team",
-    heading: "Directly involved in mining activity in Argentina",
+    heading: "Directly involved in mining and energy activities in Argentina",
 
     ourTeamTitle: "Our Team",
     ourTeamText1:
       "We accompany the process from the beginning of the activity to its enhancement.",
     ourTeamText2:
       "Our group is made up of technicians and personnel of high level and experience in each necessary area.",
-
     aboutUsText1:
-      "CONSORCIO MINERO is a team of Entrepreneurs and Professionals from multiple areas, directly involved in mining activity in Argentina, which seeks to take advantage of individual experiences and benefit from the same synergies that result from sharing them.",
+      "We are a team of entrepreneurs and professionals from multiple areas, directly involved in mining activity in Argentina, who seek to take advantage of individual experiences and benefit from the same synergies that result from sharing them.",
     aboutUsText2:
       "The long road traveled by each of us, from a participation in active both in the evaluation, definition of projects, feasibility of developments and INVESTMENT, allow us to provide an abundant knowledge in the consideration of new alternatives that ARGENTINA presents today with its particular circumstances.",
     aboutUsText3:
       "Involved in Tantalium, Cobalt, Lithium, Gold and Copper, Lime and other mineral projects, today we participate ACTIVELY in the new and interesting possibilities of development.",
     aboutUsText4:
       "Geologists, Engineers, Lawyers, Economists, Administrators, share from the perspective of 'risk takers', the considerations that affect investment, enriching the view on investments.",
-
     ourTask: "Our task",
     ourTaskText1:
       "Identification of opportunities: Based on in-depth knowledge of the country, provinces and localities, we identify deposits with high resource potential and presumption of mineral existence. ",

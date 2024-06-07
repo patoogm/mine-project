@@ -26,11 +26,13 @@ nav {
   color: #ffffff;
 }
 
-.title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+.logo {
   cursor: pointer;
-  width: 10rem !important;
+}
+
+.img-logo {
+  border-radius: 50%;
+  width: 3rem;
 }
 
 nav > div:first-child {

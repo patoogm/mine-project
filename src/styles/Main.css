@@ -25,15 +25,17 @@
 
 .imgText > h1 {
   line-height: 1;
-  font-size: 3rem;
+  font-size: 2.4rem;
   text-align: center;
   font-weight: 700;
+  text-shadow: 0.3rem 0.3rem 0.2rem #144272;
 }
 
 .imgText > p {
   text-align: center;
-  font-size: 1.2rem;
-  font-weight: 300;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 0.2rem 0.2rem 0.2rem #144272;
 }
 
 div .infoBlock {

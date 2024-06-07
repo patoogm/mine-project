@@ -4,7 +4,7 @@ const es = {
     aboutUs: "Quienes Somos",
     trajectory: "Nuestro equipo",
     projects: "Proyectos",
-    contact: "Puesta en valor",
+    contact: "Contacto",
     language: "Idioma",
     english: "Inglés",
     spanish: "Español",
@@ -17,14 +17,11 @@ const es = {
   },
   footer: {
     contactUs: "Contactanos",
-    name: "Consorcio Minero",
-    description:
-      "un equipo de Empresarios y Profesionales de múltiples áreas, involucrados directamente en la actividad minera en Argentina",
   },
   aboutUs: {
     buttonTextCompany: "Empresa",
     buttonTextTeam: "Equipo",
-    heading: "Involucrados directamente en la actividad minera en Argentina",
+    heading: "Involucrados directamente en la actividad minera y energética en Argentina",
 
     ourTeamTitle: "Nuestro Equipo",
     ourTeamText1:
@@ -33,7 +30,7 @@ const es = {
       "Nuestro grupo está formado por técnicos y personal de alto nivel y experiencia en cada rubro necesario.",
 
     aboutUsText1:
-      "CONSORCIO MINERO es un equipo de Empresarios y Profesionales de múltiples áreas, involucrados directamente en la actividad minera en Argentina, que busca aprovechar las experiencias individuales y beneficiarse de las mismas sinergias que resultan en compartirlas.",
+      "Somos un equipo de Empresarios y Profesionales de múltiples áreas, involucrados directamente en la actividad minera en Argentina, que busca aprovechar las experiencias individuales y beneficiarse de las mismas sinergias que resultan en compartirlas.",
     aboutUsText2:
       "El largo camino recorrido por cada uno, desde una participación activa tanto en la evaluación, definición de proyectos, viabilidad de los desarrollos e INVERSIÓN, nos permiten aportar un abundante conocimiento en la consideración de nuevas alternativas que ARGENTINA presenta hoy con sus particulares circunstancias.",
     aboutUsText3:

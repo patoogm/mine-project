@@ -17,11 +17,11 @@ export const TableProjects = ({
     <>
       <ul>
         <li className="m-3">
-          <i className="bi bi-minecart-loaded"></i>
-          <span> {projectName} - </span>
-          <span>{locationProject} - </span>
-          <span>{description} - </span>
-          <Button variant="primary" onClick={handleShow}>
+          <i className="bi bi-circle-fill"></i>
+          <span className="project-text"> {projectName} - </span>
+          <span className="project-text">{locationProject} - </span>
+          <span className="project-text">{description} - </span>
+          <Button className="custom-info-button"  onClick={handleShow}>
             INFO
           </Button>
         </li>

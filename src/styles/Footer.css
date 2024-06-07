@@ -48,3 +48,9 @@
     padding-bottom: 1rem;
   }
 }
+
+.img-logo-footer {
+  margin: 5px;
+  border-radius: 50%;
+  width: 12rem;
+}

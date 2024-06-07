@@ -27,34 +27,34 @@ export const AboutUs = () => {
             <p>{t.aboutUs.aboutUsText3}</p>
             <p>{t.aboutUs.aboutUsText4}</p>
           </Col>
-          <Col>
+          <Col className="mb-4">
             <h1>{t.aboutUs.ourTask}</h1>
             <p>
-              <i className="bi bi-caret-right-fill"></i>
+              <i className="bi bi-caret-right-fill me-1"></i>
               {t.aboutUs.ourTaskText1}
             </p>
             <p>
-              <i className="bi bi-caret-right-fill"></i>
+              <i className="bi bi-caret-right-fill me-1"></i>
               {t.aboutUs.ourTaskText2}
             </p>
             <p>
-              <i className="bi bi-caret-right-fill"></i>
+              <i className="bi bi-caret-right-fill me-1"></i>
               {t.aboutUs.ourTaskText3}
             </p>
             <p>
-              <i className="bi bi-caret-right-fill"></i>
+              <i className="bi bi-caret-right-fill me-1"></i>
               {t.aboutUs.ourTaskText4}
             </p>
             <p>
-              <i className="bi bi-caret-right-fill"></i>
+              <i className="bi bi-caret-right-fill me-1"></i>
               {t.aboutUs.ourTaskText5}
             </p>
             <p>
-              <i className="bi bi-caret-right-fill"></i>
+              <i className="bi bi-caret-right-fill me-1"></i>
               {t.aboutUs.ourTaskText6}
             </p>
             <p>
-              <i className="bi bi-caret-right-fill"></i>
+              <i className="bi bi-caret-right-fill me-1"></i>
               {t.aboutUs.ourTaskText7}
             </p>
           </Col>
