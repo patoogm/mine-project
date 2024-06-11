@@ -23,13 +23,13 @@ export const Footer = () => {
             <h2>{t.footer.contactUs}</h2>
           </Col>
           <Col className="my-2">
-            <p>(+5411) 4774 8567</p>
+            <p>(+54) 11 3187 4679</p>
           </Col>
           <Col className="my-2">
-            <p>(+5411) 4774 8567</p>
+            <p>(+54) 381 6048 488</p>
           </Col>
           <Col className="my-2">
-            <p>(+5411) 4774 8567</p>
+            <p>(+54) 11 5625 8165</p>
           </Col>
           <Col className="my-2">
             <p>info@consorciominero.com</p>
@@ -39,7 +39,7 @@ export const Footer = () => {
       <Row sm={12}>
         <Col>
           <p>
-            Copyright Consorcio Minero S.A. 2024 - All Rights Reserved |
+            Copyright Consorcio Minero y Energético. 2024 - All Rights Reserved |
             Desarrollado por JTDIGITALT
           </p>
         </Col>

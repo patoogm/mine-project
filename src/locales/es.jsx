@@ -37,7 +37,7 @@ const es = {
       "Involucrados en proyectos de Tantalio, Cobalto, Litio, Oro y Cobre, Cales y otros minerales, hoy participamos ACTIVAMENTE, de las nuevas e interesantes posibilidades de desarrollo.",
     aboutUsText4:
       "Geólogos, Ingenieros, Abogados, Economistas, Administradores, compartimos desde la perspectiva de “tomador de riesgo”, las consideraciones que afectan la inversión, enriqueciendo la mirada sobre las inversiones.",
-    ourTask: "Nuestra tarea",
+    ourTask: "Nuestra Tarea",
     ourTaskText1:
       "Identificación de oportunidades: A partir del conocimiento profundo del país, las provincias y localidades, identificamos los yacimientos con alto potencial de recursos y presunción de existencia minerales.",
     ourTaskText2:
@@ -62,9 +62,9 @@ const es = {
     enriquePA:
       "52  años. Reside en la ciudad de San Miguel de Tucumán, Prov. de Tucumán. Formación académica en Administración de Empresas, Ingeniería en Sistemas y Comercialización. Ha desarrollado su actividad profesional formando y administrando emprendimientos Agrícolas - Ganaderos, Construcción, Energía, Química y Minería. Es socio principal de Sideral Mining (Catamarca) Medanos Pelados (San Juan) y de Carachi Pampa Lithium (Catamarca)",
     alejandroS:
-      "65 años. Reside en la ciudad de San Rafael, Provincia de  Mendoza Contador Público Nacional. MBA otorgado por la Escuela Internacional de Negocios de la Universidad de Texas, EE.UU.(egresado con mejor promedio). Estudios de Post Grado en Formulación y Evaluación de Proyectos (1997); Herramientas Financiera s (1998). Asesor de numerosas empresas en la región y socio del Estudio Crameo, Sanchez y Asociados, con especial énfasis en temas financieros e impositivos.",
+      "65 años. Reside en la ciudad de San Rafael, Provincia de  Mendoza Contador Público Nacional. MBA otorgado por la Escuela Internacional de Negocios de la Universidad de Texas, EE.UU.(egresado con mejor promedio). Estudios de Post Grado en Formulación y Evaluación de Proyectos (1997); Herramientas Financiera s (1998). Asesor de numerosas empresas en la región y socio del Estudio Cramero, Sanchez y Asociados, con especial énfasis en temas financieros e impositivos.",
     nicolasH:
-      "29 años. Reside en Catamarca, Abogado especialista en derecho Minero, ejerce la profesión en forma privada. Es asesor de empresa mineras nacionales e internacionales. Miembro el comité ejecutivo de Carachi Pampa Lithium y accionista del yacimiento en exploración. Apoderado del proyecto “Las Vicuñas” (oro, cobre y plata); “Culampaja (oro); “Los Nacimientos” (cobre y oro). Coordinador de Derecho Minero del Colegio de Abogados de la provincia de Catamarca.",
+      "38 años. Reside en Catamarca, Abogado especialista en derecho Minero, ejerce la profesión en forma privada. Es asesor de empresa mineras nacionales e internacionales. Miembro el comité ejecutivo de Carachi Pampa Lithium y accionista del yacimiento en exploración. Apoderado del proyecto “Las Vicuñas” (oro, cobre y plata); “Culampaja (oro); “Los Nacimientos” (cobre y oro). Coordinador de Derecho Minero del Colegio de Abogados de la provincia de Catamarca.",
     alvaroG:
       "50 años. Reside en la ciudad de Salta, provincia homónima. Alvaro aporta más de 20 años de experiencia internacional en la industria minera: alrededor de 15 de ellos específicamente relacionados con el litio como producto de especialidad. Ha ocupado varios cargos en distintas compañías como empresa minera Rio Tinto, ha ostentado también puestos de alta dirección en empresas canadiense y australianas, donde asumió papeles claves en el desarrollo y posterior venta de activos mineros a grupos de mayor envergadura. Es actualmente consultor y asesor al Directorio de empresas Tecnológicas y de Servicios. Ex Presidente de la Cámara de Proveedores Mineros de Salta y Vicepresidente del capítulo de AUSCHAM Argentina. Contribuye de esta forma también, con liderazgo y compromiso comunal en la Región.",
   },

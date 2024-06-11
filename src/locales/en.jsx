@@ -36,7 +36,7 @@ const en = {
       "Involved in Tantalium, Cobalt, Lithium, Gold and Copper, Lime and other mineral projects, today we participate ACTIVELY in the new and interesting possibilities of development.",
     aboutUsText4:
       "Geologists, Engineers, Lawyers, Economists, Administrators, share from the perspective of 'risk takers', the considerations that affect investment, enriching the view on investments.",
-    ourTask: "Our task",
+    ourTask: "Our Task",
     ourTaskText1:
       "Identification of opportunities: Based on in-depth knowledge of the country, provinces and localities, we identify deposits with high resource potential and presumption of mineral existence. ",
     ourTaskText2:
@@ -61,9 +61,9 @@ const en = {
     enriquePA:
       "52 years old. Lives in the city of San Miguel de Tucumán, Province of Tucumán. Academic training in Business Administration, Systems Engineering and Marketing. He has developed his professional activity forming and managing agricultural - livestock, construction, energy, chemical and mining ventures. He is a principal partner of Sideral Mining (Catamarca) Medanos Pelados (San Juan) and Carachi Pampa Lithium (Catamarca),",
     alejandroS:
-      "65 years old. He resides in the city of San Rafael, Province of Mendoza. National Public Accountant. MBA awarded by the International Business School of the University of Texas, USA (graduated with the best average). Post Graduate Studies in Project Formulation and Evaluation (1997); Financial Tools (1998). Advisor to numerous companies in the region and partner of Estudio Crameo, Sanchez y Asociados, with special emphasis on financial and tax issues.",
+      "65 years old. He resides in the city of San Rafael, Province of Mendoza. National Public Accountant. MBA awarded by the International Business School of the University of Texas, USA (graduated with the best average). Post Graduate Studies in Project Formulation and Evaluation (1997); Financial Tools (1998). Advisor to numerous companies in the region and partner of Estudio Cramero, Sanchez y Asociados, with special emphasis on financial and tax issues.",
     nicolasH:
-      "29 years old. He resides in Catamarca, a lawyer specializing in Mining Law. He practices the profession privately. He is an advisor to national and international mining companies. Member of the executive committee of Carachi Pampa Lithium and shareholder of the deposit under exploration. Representative of the “Las Vicuñas” project (gold, copper and silver); “Culampaja (gold); “Los Nacimientos” (copper and gold).",
+      "38 years old. He resides in Catamarca, a lawyer specializing in Mining Law. He practices the profession privately. He is an advisor to national and international mining companies. Member of the executive committee of Carachi Pampa Lithium and shareholder of the deposit under exploration. Representative of the “Las Vicuñas” project (gold, copper and silver); “Culampaja (gold); “Los Nacimientos” (copper and gold).",
     alvaroG:
       "50 years old. He resides in the city of Salta, province of the same name. Alvaro brings more than 20 years of international experience in the mining industry: around 15 of them specifically related to lithium as a specialty product. He has held various positions in different companies such as the mining company Rio Tinto, he has also held senior management positions in Canadian and Australian companies, where he assumed key roles in the development and subsequent sale of mining assets to larger groups. He is currently a consultant and advisor to the Board of Directors of Technology companies. and Services. Former President of the Chamber of Mining Suppliers of Salta and Vice President of the AUSCHAM Argentina chapter. He also contributes in this way, with leadership and community commitment in the Region.",
   },
