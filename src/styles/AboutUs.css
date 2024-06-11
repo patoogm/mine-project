@@ -5,6 +5,14 @@
   padding: 0;
 }
 
+.imgAboutUs {
+  background-image: url(../statics/imagen4.jpg);
+  background-repeat: round;
+  height: 30rem;
+  width: 100%;
+  object-fit: fill;
+}
+
 .imgTextAboutUs {
   display: flex;
   flex-direction: column;
@@ -23,7 +31,6 @@
   padding-left: 0.4rem;
   padding-right: 0.4rem;
   text-shadow: 0.3rem 0.3rem 0.2rem #144272;
-
 }
 
 .btnInPage {

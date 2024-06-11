@@ -13,7 +13,7 @@ export const AboutUs = () => {
   return (
     <>
       <NavbarComponent />
-      <div className="img">
+      <div className="imgAboutUs">
         <section className="imgTextAboutUs">
           <h1>{t.aboutUs.heading}</h1>
         </section>

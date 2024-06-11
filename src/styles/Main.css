@@ -8,6 +8,14 @@
   object-fit: fill;
 }
 
+.imgContactPage {
+  background-image: url(../statics/imagen5.jpg);
+  background-repeat: round;
+  height: 30rem;
+  width: 100%;
+  object-fit: fill;
+}
+
 * {
   margin: 0;
   padding: 0;
