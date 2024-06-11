@@ -3,6 +3,7 @@ import Form from "react-bootstrap/Form";
 import "../styles/AdminPanel.css";
 
 export const AdminPanel = () => {
+
   return (
     <div>
       <section className="w-100">
