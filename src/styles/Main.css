@@ -9,8 +9,7 @@
 }
 
 .imgContactPage {
-  background-image: url(../statics/imagen5.jpg);
-  background-repeat: round;
+  background-repeat: no-repeat;
   height: 30rem;
   width: 100%;
   object-fit: fill;
