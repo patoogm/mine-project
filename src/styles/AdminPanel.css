@@ -7,3 +7,14 @@
   height: 100vh;
   background-color: gray;
 }
+
+form .adminPanelBtn {
+  background-color: #144272 !important;
+  border: #1e5188;
+  color: white;
+}
+
+.adminPanelContainer {
+  height: 100vh;
+  background-color: rgb(165, 165, 165);
+}

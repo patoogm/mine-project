@@ -10,7 +10,7 @@ const en = {
     spanish: "Spanish",
   },
   main: {
-    heading: "CONSORTIUM FOR THE DEVELOPMENT OF MINING AND ENERGY PROJECTS",
+    heading: "Consortium for the Development of Mining and Energy Projects",
     description: "Argentina",
     message:
       "Experience in the development and enhancement of projects related to mining and energy activities",

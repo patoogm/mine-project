@@ -8,7 +8,7 @@ import Alert from "react-bootstrap/Alert";
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState(""); 
+  const [error, setError] = useState("");
   const [validated, setValidated] = useState(false);
   const { login } = useAuth();
   const navigate = useNavigate();
@@ -21,13 +21,13 @@ const Login = () => {
     } else {
       try {
         const formData = new URLSearchParams();
-        formData.append('user', username);
-        formData.append('password', password);
+        formData.append("user", username);
+        formData.append("password", password);
 
-        const response = await fetch('http://localhost:3000/authLogin', {
-          method: 'POST',
+        const response = await fetch("http://localhost:3000/authLogin", {
+          method: "POST",
           headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
+            "Content-Type": "application/x-www-form-urlencoded",
           },
           body: formData,
         });
@@ -42,7 +42,7 @@ const Login = () => {
           console.error("Error en la solicitud:", errorMessage);
         }
       } catch (error) {
-        console.error('Error al iniciar sesión:', error);
+        console.error("Error al iniciar sesión:", error);
         setError("Credenciales incorrectas");
       }
     }
@@ -53,7 +53,12 @@ const Login = () => {
     <div className="loginContainer">
       <section className="w-100 d-flex flex-column align-items-center pt-4">
         <h1>Acceso Administración</h1>
-        <Form noValidate validated={validated} onSubmit={handleSubmit} className="w-50 bg-body-secondary">
+        <Form
+          noValidate
+          validated={validated}
+          onSubmit={handleSubmit}
+          className="w-50 bg-body-secondary"
+        >
           <Form.Group className="m-3" controlId="formBasicEmail">
             <Form.Label>Usuario</Form.Label>
             <Form.Control
@@ -80,12 +85,12 @@ const Login = () => {
               name="password"
             />
             <Form.Control.Feedback type="invalid">
-            Por favor ingrese una contraseña
+              Por favor ingrese una contraseña
             </Form.Control.Feedback>
           </Form.Group>
 
           <Button variant="info" type="submit" className="m-3">
-            Submit
+            Ingresar
           </Button>
           {error && (
             <div className="d-flex justify-content-center">

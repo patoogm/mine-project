@@ -10,7 +10,7 @@ const es = {
     spanish: "Español",
   },
   main: {
-    heading: "CONSORCIO PARA EL DESARROLLO DE PROYECTOS MINEROS Y ENERGETICOS",
+    heading: "Consorcio para el Desarrollo de Proyectos Mineros y Energéticos",
     description: "Argentina",
     message:
       "Experiencia en el desarrollo y puesta en valor de proyectos relacionados con actividades mineras y energéticas",
@@ -21,7 +21,8 @@ const es = {
   aboutUs: {
     buttonTextCompany: "Empresa",
     buttonTextTeam: "Equipo",
-    heading: "Involucrados directamente en la actividad minera y energética en Argentina",
+    heading:
+      "Involucrados directamente en la actividad minera y energética en Argentina",
 
     ourTeamTitle: "Nuestro Equipo",
     ourTeamText1:
