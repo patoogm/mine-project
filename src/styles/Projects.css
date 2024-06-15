@@ -46,21 +46,45 @@
 }
 
 .custom-info-button {
-    background-color: #003057 !important;
-    border-color: #003057 !important;
-    color: white !important; /* Color del texto */
+  background-color: #003057 !important;
+  border-color: #003057 !important;
+  color: white !important; /* Color del texto */
 }
 
 .custom-info-button:hover {
-    background-color: #144272 !important;
-    border-color: #144272 !important;
+  background-color: #144272 !important;
+  border-color: #144272 !important;
 }
 
 .custom-info-button:active {
-    background-color: #0b2644 !important;
-    border-color: #0b2644 !important;
+  background-color: #0b2644 !important;
+  border-color: #0b2644 !important;
 }
 
 .project-text {
   font-weight: 550;
+}
+
+.carousel {
+  height: 30rem;
+  width: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.imgProjects {
+  width: 100%;
+}
+
+@media all and (min-width: 425px) {
+  .carousel-item {
+    height: 100%;
+  }
+
+  .imgProjects {
+    height: 100%;
+    object-fit: fill;
+  }
 }

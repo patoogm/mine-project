@@ -8,6 +8,13 @@
   object-fit: fill;
 }
 
+.imgContactPage {
+  background-repeat: no-repeat;
+  height: 30rem;
+  width: 100%;
+  object-fit: fill;
+}
+
 * {
   margin: 0;
   padding: 0;
