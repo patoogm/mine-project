@@ -2,23 +2,50 @@ import { useContext, useState } from 'react'
 import { Button, Col, Container, Form, InputGroup, Row } from "react-bootstrap"
 import { LanguageContext } from '../contexts/LanguageContext';
 import '../styles/ContactForm.css'
-
+import axios from 'axios';
 
 export const ContactForm = () => {
   const [validated, setValidated] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    file: null,
+    comments: ''
+  });
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
+    event.preventDefault();
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
-      event.preventDefault();
       event.stopPropagation();
+    } else {
+      try {
+        const response = await axios.post('http://localhost:3000/send-email', formData)
+        console.log(response)
+        if (response.statusText === "OK") {
+          alert('Email enviado exitosamente!');
+        } else {
+          alert('Failed to send email.');
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        alert('An error occurred while sending the email.');
+      }
     }
 
     setValidated(true);
   };
 
-  const useLanguage = () => useContext(LanguageContext);
+  const handleChange = (e) => {
+    const { name, value, files } = e.target;
+    setFormData({
+      ...formData,
+      [name]: files ? files[0] : value
+    });
+  };
 
+  const useLanguage = () => useContext(LanguageContext);
   const { t } = useLanguage();
 
   return (
@@ -39,56 +66,66 @@ export const ContactForm = () => {
                       required
                       type="text"
                       placeholder={t.contact.namePlaceholder}
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
                     />
                     <Form.Control.Feedback type="invalid">
                       {t.contact.nameError}
                     </Form.Control.Feedback>
                   </Form.Group>
                 </Row>
-
                 <Row className="mb-4">
                   <Form.Group as={Col} md="12" controlId="validationCustom02">
                     <Form.Control
                       required
                       type="email"
                       placeholder={t.contact.mailPlaceholder}
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
                     />
                     <Form.Control.Feedback type="invalid">
                       {t.contact.mailError}
                     </Form.Control.Feedback>
                   </Form.Group>
                 </Row>
-
                 <Row className="mb-4">
-                <Form.Group as={Col} md="12" controlId="validationCustomUsername">
-                  <InputGroup hasValidation>
-                    <Form.Control
-                      type="number"
-                      placeholder={t.contact.phonePlaceholder}
-                      required
-                    />
-                    <Form.Control.Feedback type="invalid">
-                      {t.contact.phoneError}
-                    </Form.Control.Feedback>
-                  </InputGroup>
-                </Form.Group>
+                  <Form.Group as={Col} md="12" controlId="validationCustomUsername">
+                    <InputGroup hasValidation>
+                      <Form.Control
+                        type="number"
+                        placeholder={t.contact.phonePlaceholder}
+                        required
+                        name="phone"
+                        value={formData.phone}
+                        onChange={handleChange}
+                      />
+                      <Form.Control.Feedback type="invalid">
+                        {t.contact.phoneError}
+                      </Form.Control.Feedback>
+                    </InputGroup>
+                  </Form.Group>
                 </Row>
-
                 <Row className="mb-4">
                   <Form.Group as={Col} md="12" controlId="validationCustom03">
                     <Form.Control 
                       type="file" 
                       accept='.pdf'
+                      name="file"
+                      onChange={handleChange}
                     />
                   </Form.Group>
                 </Row>
-
                 <Row className="mb-4">
                   <Form.Group as={Col} md="12" controlId="validationCustom04">
                     <Form.Control 
                       as="textarea"
                       placeholder={t.contact.commentsPlaceholder}
                       style={{ height: '100px' }}
+                      name="comments"
+                      value={formData.comments}
+                      onChange={handleChange}
                     />
                   </Form.Group>
                 </Row>

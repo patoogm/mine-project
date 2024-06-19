@@ -10,7 +10,7 @@ const en = {
     spanish: "Spanish",
   },
   main: {
-    heading: "CONSORTIUM FOR THE DEVELOPMENT OF MINING AND ENERGY PROJECTS",
+    heading: "Consortium for the Development of Mining and Energy Projects",
     description: "Argentina",
     message:
       "Experience in the development and enhancement of projects related to mining and energy activities",
@@ -71,9 +71,9 @@ const en = {
     description: "Descripction contact",
     title: "Projects to develop",
     messageFirstLine:
-      "The unique opportunity that exists in the current context of Argentina means that we periodically receive requests for mining and renewable energy projects from both investment funds and individual interested parties.",
+      "Argentina has a large reserve of lithium, copper, gold and other minerals. Additionally, it presents interesting opportunities to develop wind, solar and geothermal energy, due to its privileged natural conditions and its corresponding socio-cultural framework.",
     messageSecondLine:
-      "If you have a project that you would be interested in us analyzing, Contact us!",
+      "Consultation on projects and the open exchange of possibilities, within a particular regulatory framework, allow us to be open to continuous considerations that generate valuable local input with a particular view of the same alternatives. Our team is available to provide the necessary consultations that best contribute to the investment proposal.",
     namePlaceholder: "NAME AND SURNAME",
     mailPlaceholder: "E-MAIL",
     phonePlaceholder: "PHONE",

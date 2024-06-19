@@ -1,34 +1,35 @@
-import { useState, useEffect } from 'react';
-import { v4 as uuidv4 } from 'uuid';
+import { useState, useEffect } from "react";
+import { v4 as uuidv4 } from "uuid";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import Alert from 'react-bootstrap/Alert';
+import Alert from "react-bootstrap/Alert";
 import "../styles/AdminPanel.css";
-import useAuth from '../hooks/useAuth';
+import useAuth from "../hooks/useAuth";
+import { FormGroup } from "react-bootstrap";
 
 export const AdminInputs = ({ project, onProjectAdded }) => {
   const { token } = useAuth();
-  const [id, setId] = useState('');
-  const [name, setName] = useState('');
-  const [location, setLocation] = useState('');
-  const [description, setDescription] = useState('');
-  const [paragraphs, setParagraphs] = useState(['', '', '']);
-  const [error, setError] = useState('');
-  const [success, setSuccess] = useState('');
+  const [id, setId] = useState("");
+  const [name, setName] = useState("");
+  const [location, setLocation] = useState("");
+  const [description, setDescription] = useState("");
+  const [paragraphs, setParagraphs] = useState(["", "", ""]);
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
 
   useEffect(() => {
     if (project) {
-      setId(project.id || '');
+      setId(project.id || "");
       setName(project.name);
       setLocation(project.location);
-      setDescription(project.description)
-      setParagraphs(project.paragraphs || ['', '', '']);
+      setDescription(project.description);
+      setParagraphs(project.paragraphs || ["", "", ""]);
     } else {
-      setId('');
-      setName('');
-      setLocation('');
-      setDescription('')
-      setParagraphs(['', '', '']);
+      setId("");
+      setName("");
+      setLocation("");
+      setDescription("");
+      setParagraphs(["", "", ""]);
     }
   }, [project]);
 
@@ -39,7 +40,7 @@ export const AdminInputs = ({ project, onProjectAdded }) => {
   };
 
   const handleAddParagraph = () => {
-    setParagraphs([...paragraphs, '']);
+    setParagraphs([...paragraphs, ""]);
   };
 
   const handleSubmit = async () => {
@@ -50,62 +51,64 @@ export const AdminInputs = ({ project, onProjectAdded }) => {
       name,
       location,
       description,
-      paragraphs
+      paragraphs,
     };
 
     try {
-      const response = await fetch(`http://localhost:3000${project ? `/edit/${projectId}` : '/add'}`, {
-        method: project ? 'PATCH' : 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': token,
-        },
-        body: JSON.stringify(newProject)
-      });
+      const response = await fetch(
+        `http://localhost:3000${project ? `/edit/${projectId}` : "/add"}`,
+        {
+          method: project ? "PATCH" : "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: token,
+          },
+          body: JSON.stringify(newProject),
+        }
+      );
 
       if (response.ok) {
-        setSuccess('Proyecto agregado/exitosamente');
-        setError('');
+        setSuccess("Proyecto agregado/exitosamente");
+        setError("");
         onProjectAdded();
       } else {
         const errorMessage = await response.text();
         setError(`Error al agregar/el proyecto: ${errorMessage}`);
-        setSuccess('');
+        setSuccess("");
       }
     } catch (error) {
-      console.error('Error al agregar/el proyecto:', error);
-      setError('Error al procesar la solicitud');
-      setSuccess('');
+      console.error("Error al agregar/el proyecto:", error);
+      setError("Error al procesar la solicitud");
+      setSuccess("");
     }
   };
 
   return (
     <div>
       <section className="w-100 d-flex flex-column justify-content-center align-items-center bg-secondary pb-4">
-        <h1>Panel de Administración</h1>
         {error && <Alert variant="danger">{error}</Alert>}
         {success && <Alert variant="success">{success}</Alert>}
-        <Form className="w-50 bg-light d-flex flex-column align-items-center">
-          <Form.Group className="p-3 w-100" controlId="formBasicName">
-            <Form.Label>Nombre del proyecto</Form.Label>
-            <Form.Control
-              type="text"
-              placeholder="Nombre del proyecto"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-          </Form.Group>
-
-          <Form.Group className="p-3 w-100" controlId="formBasicLocation">
-            <Form.Label>Ubicación</Form.Label>
-            <Form.Control
-              type="text"
-              placeholder="Ubicación"
-              value={location}
-              onChange={(e) => setLocation(e.target.value)}
-            />
-          </Form.Group>
-
+        <Form className="w-75 bg-light d-flex flex-column align-items-center">
+          <FormGroup className="d-flex flex-row w-100">
+            <Form.Group className="p-3 w-50" controlId="formBasicName">
+              <Form.Label>Nombre del proyecto</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Nombre del proyecto"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </Form.Group>
+            <Form.Group className="p-3 w-50" controlId="formBasicLocation">
+              <Form.Label>Ubicación</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Ubicación"
+                value={location}
+                onChange={(e) => setLocation(e.target.value)}
+              />
+            </Form.Group>
+          </FormGroup>
           <Form.Group className="p-3 w-100" controlId="formBasicDescription">
             <Form.Label>Descripción</Form.Label>
             <Form.Control
@@ -117,7 +120,11 @@ export const AdminInputs = ({ project, onProjectAdded }) => {
           </Form.Group>
 
           {paragraphs.map((paragraph, index) => (
-            <Form.Group className="p-3 w-100" controlId={`formBasicParagraph${index}`} key={index}>
+            <Form.Group
+              className="p-3 w-100"
+              controlId={`formBasicParagraph${index}`}
+              key={index}
+            >
               <Form.Label>Párrafo {index + 1}</Form.Label>
               <Form.Control
                 type="text"
@@ -128,11 +135,20 @@ export const AdminInputs = ({ project, onProjectAdded }) => {
             </Form.Group>
           ))}
 
-          <Button variant="secondary" type="button" onClick={handleAddParagraph}>
+          <Button
+            variant="secondary"
+            type="button"
+            onClick={handleAddParagraph}
+          >
             + Agregar Párrafo
           </Button>
 
-          <Button variant="info" type="button" className="pb-2 mt-3" onClick={handleSubmit}>
+          <Button
+            variant="info"
+            type="button"
+            className="pb-2 mt-3 adminPanelBtn"
+            onClick={handleSubmit}
+          >
             Enviar
           </Button>
         </Form>

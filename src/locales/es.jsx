@@ -10,7 +10,7 @@ const es = {
     spanish: "Español",
   },
   main: {
-    heading: "CONSORCIO PARA EL DESARROLLO DE PROYECTOS MINEROS Y ENERGETICOS",
+    heading: "Consorcio para el Desarrollo de Proyectos Mineros y Energéticos",
     description: "Argentina",
     message:
       "Experiencia en el desarrollo y puesta en valor de proyectos relacionados con actividades mineras y energéticas",
@@ -21,7 +21,8 @@ const es = {
   aboutUs: {
     buttonTextCompany: "Empresa",
     buttonTextTeam: "Equipo",
-    heading: "Involucrados directamente en la actividad minera y energética en Argentina",
+    heading:
+      "Involucrados directamente en la actividad minera y energética en Argentina",
 
     ourTeamTitle: "Nuestro Equipo",
     ourTeamText1:
@@ -72,9 +73,9 @@ const es = {
     description: "Descripcion en contacto",
     title: "Proyectos para desarrollar",
     messageFirstLine:
-      "La oportunidad única que se da en el contexto actual de Argentina hace que recibamos periódicamente solicitudes sobre proyectos mineros y energía renovables tanto de fondos de inversión e interesados particulares.",
+      "Argentina tiene una gran reserva de litio, cobre, oro y otros minerales. Adicionalmente, presenta interesantes oportunidades para desarrollar energías eólicas, solares y geotérmicas, debido a sus condiciones  naturales privilegiadas y su marco socio cultural acorde.",
     messageSecondLine:
-      "Si tenés un proyecto que te interesaría que analicemos, ¡Contáctanos!",
+      "La consulta sobre los proyectos y el intercambio abierto de posibilidades, en un particular marco regulatorio, nos permiten estar abiertos a continuas consideraciones que generan un aporte local valioso con una mirada particular de las mismas alternativas.  Nuestro equipo se encuentra a disposición de las consultas necesarias que mejor contribuyan al planteo de la inversión.",
     namePlaceholder: "NOMBRE Y APELLIDO",
     mailPlaceholder: "EMAIL",
     phonePlaceholder: "TELÉFONO",

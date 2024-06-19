@@ -17,7 +17,7 @@ export const ProjectList = ({item}) => {
             <i className="bi bi-circle-fill"></i>
             <span className="project-text"> {item.name} - </span>
             <span className="project-text">{item.location} - </span>
-            <span className="project-text">{item.description} - </span>
+            <span className="project-text">{item.description}  </span>
             <Button className="custom-info-button"  onClick={handleShow}>INFO</Button>
           </li>
         }
