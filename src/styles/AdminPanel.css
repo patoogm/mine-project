@@ -8,6 +8,15 @@
   background-color: gray;
 }
 
+.loginContainer button {
+  background-color: #003057;
+  border: #1e5188;
+}
+
+.loginContainer button:hover {
+  background-color: #1e5188;
+}
+
 form .adminPanelBtn {
   background-color: #144272 !important;
   border: #1e5188;
@@ -17,4 +26,13 @@ form .adminPanelBtn {
 .adminPanelContainer {
   height: 100vh;
   background-color: rgb(165, 165, 165);
+}
+
+.adminPanelContainer .btnAdm {
+  background-color: #003057;
+  border: #1e5188;
+}
+
+.adminPanelContainer .btnAdm:hover {
+  background-color: #1e5188;
 }

@@ -84,6 +84,9 @@ const es = {
     mailError: "Por favor ingrese su correo electrónico",
     phoneError: "Por favor ingrese su teléfono",
     sendButton: "ENVIAR",
+    loading: "Enviando...",
+    emailSend: "Mensaje enviado correctamente",
+    emailError: "No se ha podido enviar",
   },
   projects: {
     heading: "Identificación de oportunidades",

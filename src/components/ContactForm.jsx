@@ -1,18 +1,33 @@
-import { useContext, useState } from 'react'
-import { Button, Col, Container, Form, InputGroup, Row } from "react-bootstrap"
-import { LanguageContext } from '../contexts/LanguageContext';
-import '../styles/ContactForm.css'
-import axios from 'axios';
+import { useContext, useState } from "react";
+import {
+  Button,
+  Col,
+  Container,
+  Form,
+  InputGroup,
+  Row,
+  Modal,
+} from "react-bootstrap";
+import { LanguageContext } from "../contexts/LanguageContext";
+import "../styles/ContactForm.css";
+import axios from "axios";
 
 export const ContactForm = () => {
+  const [isLoading, setisLoading] = useState(false);
   const [validated, setValidated] = useState(false);
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
+    name: "",
+    email: "",
+    phone: "",
     file: null,
-    comments: ''
+    comments: "",
   });
+  const [show, setShow] = useState(false);
+  const [showError, setShowError] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  const handleShowError = () => setShowError(true);
+  const handleCloseError = () => setShowError(false);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -20,20 +35,25 @@ export const ContactForm = () => {
     if (form.checkValidity() === false) {
       event.stopPropagation();
     } else {
+      setisLoading(true);
       try {
-        const response = await axios.post('http://localhost:3000/send-email', formData)
-        console.log(response)
+        const response = await axios.post(
+          "http://localhost:3000/send-email",
+          formData
+        );
+        console.log(response);
         if (response.statusText === "OK") {
-          alert('Email enviado exitosamente!');
+          handleShow(true);
         } else {
-          alert('Failed to send email.');
+          handleShowError(true);
         }
       } catch (error) {
-        console.error('Error:', error);
-        alert('An error occurred while sending the email.');
+        console.error("Error:", error);
+        handleShowError(true);
+      } finally {
+        setisLoading(false);
       }
     }
-
     setValidated(true);
   };
 
@@ -41,7 +61,7 @@ export const ContactForm = () => {
     const { name, value, files } = e.target;
     setFormData({
       ...formData,
-      [name]: files ? files[0] : value
+      [name]: files ? files[0] : value,
     });
   };
 
@@ -51,11 +71,11 @@ export const ContactForm = () => {
   return (
     <>
       <div className="form-container">
-        <Row sm={12} className='justify-content-center'>
+        <Row sm={12} className="justify-content-center">
           <Col sm={12} lg={5}>
             <h2>{t.contact.title}</h2>
-            <p className='my-4'>{t.contact.messageFirstLine}</p>
-            <p className='my-4'>{t.contact.messageSecondLine}</p>
+            <p className="my-4">{t.contact.messageFirstLine}</p>
+            <p className="my-4">{t.contact.messageSecondLine}</p>
           </Col>
           <Col sm={12} lg={5}>
             <Container>
@@ -91,7 +111,11 @@ export const ContactForm = () => {
                   </Form.Group>
                 </Row>
                 <Row className="mb-4">
-                  <Form.Group as={Col} md="12" controlId="validationCustomUsername">
+                  <Form.Group
+                    as={Col}
+                    md="12"
+                    controlId="validationCustomUsername"
+                  >
                     <InputGroup hasValidation>
                       <Form.Control
                         type="number"
@@ -109,9 +133,9 @@ export const ContactForm = () => {
                 </Row>
                 <Row className="mb-4">
                   <Form.Group as={Col} md="12" controlId="validationCustom03">
-                    <Form.Control 
-                      type="file" 
-                      accept='.pdf'
+                    <Form.Control
+                      type="file"
+                      accept=".pdf"
                       name="file"
                       onChange={handleChange}
                     />
@@ -119,22 +143,36 @@ export const ContactForm = () => {
                 </Row>
                 <Row className="mb-4">
                   <Form.Group as={Col} md="12" controlId="validationCustom04">
-                    <Form.Control 
+                    <Form.Control
                       as="textarea"
                       placeholder={t.contact.commentsPlaceholder}
-                      style={{ height: '100px' }}
+                      style={{ height: "100px" }}
                       name="comments"
                       value={formData.comments}
                       onChange={handleChange}
                     />
                   </Form.Group>
                 </Row>
-                <Button className='custom-info-button' type="submit">{t.contact.sendButton}</Button>
+                <Button className="custom-info-button" type="submit">
+                  {isLoading ? t.contact.loading : t.contact.sendButton}
+                </Button>
               </Form>
             </Container>
           </Col>
         </Row>
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title></Modal.Title>
+          </Modal.Header>
+          <Modal.Body>{t.contact.emailSend}</Modal.Body>
+        </Modal>
+        <Modal show={showError} onHide={handleCloseError}>
+          <Modal.Header closeButton>
+            <Modal.Title></Modal.Title>
+          </Modal.Header>
+          <Modal.Body>{t.contact.emailError}</Modal.Body>
+        </Modal>
       </div>
     </>
-  )
-}
+  );
+};

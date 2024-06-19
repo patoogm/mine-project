@@ -82,6 +82,9 @@ const en = {
     mailError: "Please enter your email",
     phoneError: "Please enter your phone",
     sendButton: "SEND",
+    loading: "Sending...",
+    emailSend: "Message sent successfully",
+    emailError: "Couldn't send email",
   },
   projects: {
     heading: "Identifying Opportunities",

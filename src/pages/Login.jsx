@@ -89,7 +89,7 @@ const Login = () => {
             </Form.Control.Feedback>
           </Form.Group>
 
-          <Button variant="info" type="submit" className="m-3">
+          <Button type="submit" className="m-3">
             Ingresar
           </Button>
           {error && (

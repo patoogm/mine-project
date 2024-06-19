@@ -119,10 +119,13 @@ export const AdminTable = () => {
             {error}
           </Alert>
         )}
-        <Row className=" p-1">
+        <Row className="p-1">
           <Col className="m-5 d-flex flex-column align-items-center">
             <h2 className="text-white">Panel de Administración</h2>
-            <Button className="mx-3 w-25" onClick={() => handleEdit(null)}>
+            <Button
+              className="mx-3 w-25 btnAdm"
+              onClick={() => handleEdit(null)}
+            >
               <i className="bi bi-plus"> Agregar Proyecto</i>
             </Button>
           </Col>
@@ -139,20 +142,14 @@ export const AdminTable = () => {
                   <td>{project.name}</td>
                   <td>
                     <Button
-                      className="mx-3"
+                      className="mx-3  btnAdm"
                       onClick={() => handleEdit(project)}
                     >
                       <i className="bi bi-pencil"> Editar</i>
                     </Button>
-                    <Button
-                      className="mx-3"
-                      onClick={() => handleConfirmDelete(project.id)}
-                    >
-                      <i className="bi bi-trash"> Eliminar</i>
-                    </Button>
                     {!project.visible ? (
                       <Button
-                        className="mx-3"
+                        className="mx-3  btnAdm"
                         onClick={() => handleHide(project.id)}
                       >
                         <i className="bi bi-eye-fill"> Mostrar</i>
@@ -165,6 +162,13 @@ export const AdminTable = () => {
                         <i className="bi bi-eye-slash"> Ocultar</i>
                       </Button>
                     )}
+                    <Button
+                      variant="danger"
+                      className="mx-3"
+                      onClick={() => handleConfirmDelete(project.id)}
+                    >
+                      <i className="bi bi-trash"> Eliminar</i>
+                    </Button>
                   </td>
                 </tr>
               ))}
