@@ -121,7 +121,7 @@ export const AdminTable = () => {
         )}
         <Row className=" p-1">
           <Col className="m-5 d-flex flex-column align-items-center">
-            <h2>Panel de Administración</h2>
+            <h2 className="text-white">Panel de Administración</h2>
             <Button className="mx-3 w-25" onClick={() => handleEdit(null)}>
               <i className="bi bi-plus"> Agregar Proyecto</i>
             </Button>
