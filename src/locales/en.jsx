@@ -84,7 +84,9 @@ const en = {
     sendButton: "SEND",
     loading: "Sending...",
     emailSend: "Message sent successfully",
+    emailText: "In the near future we will contact.",
     emailError: "Couldn't send email",
+    emailTextError: "Your query could not be sent, please try again.",
   },
   projects: {
     heading: "Identifying Opportunities",

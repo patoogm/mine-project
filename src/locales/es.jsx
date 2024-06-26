@@ -86,7 +86,9 @@ const es = {
     sendButton: "ENVIAR",
     loading: "Enviando...",
     emailSend: "Mensaje enviado correctamente",
-    emailError: "No se ha podido enviar",
+    emailText: "A la brevedad nos pondremos en contacto.",
+    emailError: "¡Algo salió mal!",
+    emailTextError: "No se ha podido enviar su consulta, por favor intente nuevamente.",
   },
   projects: {
     heading: "Identificación de oportunidades",

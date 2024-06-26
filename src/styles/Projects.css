@@ -78,6 +78,11 @@
   width: 100%;
 }
 
+.image-modal {
+  margin: 15px;
+  width: 30%;
+}
+
 @media all and (min-width: 425px) {
   .carousel-item {
     height: 100%;

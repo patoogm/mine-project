@@ -37,12 +37,21 @@ export const ContactForm = () => {
     } else {
       setisLoading(true);
       try {
-        const response = await axios.post(
-          "http://localhost:3000/send-email",
-          formData
-        );
-        console.log(response);
-        if (response.statusText === "OK") {
+        const formDataToSend = new FormData();
+        formDataToSend.append('name', formData.name);
+        formDataToSend.append('email', formData.email);
+        formDataToSend.append('phone', formData.phone);
+        formDataToSend.append('comments', formData.comments);
+        if (formData.file) {
+          formDataToSend.append('file', formData.file);
+        }
+  
+        const response = await axios.post('http://localhost:3000/send-email', formDataToSend, {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
+        });
+        if (response.status === 200) {
           handleShow(true);
         } else {
           handleShowError(true);
@@ -162,15 +171,15 @@ export const ContactForm = () => {
         </Row>
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title></Modal.Title>
+            <Modal.Title>{t.contact.emailSend}</Modal.Title>
           </Modal.Header>
-          <Modal.Body>{t.contact.emailSend}</Modal.Body>
+          <Modal.Body>{t.contact.emailText}</Modal.Body>
         </Modal>
         <Modal show={showError} onHide={handleCloseError}>
           <Modal.Header closeButton>
-            <Modal.Title></Modal.Title>
+            <Modal.Title>{t.contact.emailError}</Modal.Title>
           </Modal.Header>
-          <Modal.Body>{t.contact.emailError}</Modal.Body>
+          <Modal.Body>{t.contact.emailTextError}</Modal.Body>
         </Modal>
       </div>
     </>

@@ -13,9 +13,10 @@ export const AdminInputs = ({ project, onProjectAdded }) => {
   const [name, setName] = useState("");
   const [location, setLocation] = useState("");
   const [description, setDescription] = useState("");
-  const [paragraphs, setParagraphs] = useState(["", "", ""]);
+  const [paragraphs, setParagraphs] = useState(["", "", "", ""]); // Ajusta el estado inicial con un párrafo adicional
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
+  const [images, setImages] = useState(["", ""]);
 
   useEffect(() => {
     if (project) {
@@ -23,13 +24,15 @@ export const AdminInputs = ({ project, onProjectAdded }) => {
       setName(project.name);
       setLocation(project.location);
       setDescription(project.description);
-      setParagraphs(project.paragraphs || ["", "", ""]);
+      setParagraphs(project.paragraphs || ["", "", "", ""]); // Ajusta para manejar hasta 4 párrafos
+      setImages(project.images || ["", ""]);
     } else {
       setId("");
       setName("");
       setLocation("");
       setDescription("");
-      setParagraphs(["", "", ""]);
+      setParagraphs(["", "", "", ""]); // Ajusta para manejar hasta 4 párrafos
+      setImages(["", ""]);
     }
   }, [project]);
 
@@ -39,8 +42,27 @@ export const AdminInputs = ({ project, onProjectAdded }) => {
     setParagraphs(newParagraphs);
   };
 
+  const handleImageChange = (index, e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        const newImages = [...images];
+        newImages[index] = reader.result;
+        setImages(newImages);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
   const handleAddParagraph = () => {
     setParagraphs([...paragraphs, ""]);
+  };
+
+  const handleDeleteParagraph = (index) => {
+    const newParagraphs = [...paragraphs];
+    newParagraphs.splice(index, 1);
+    setParagraphs(newParagraphs);
   };
 
   const handleSubmit = async () => {
@@ -52,6 +74,7 @@ export const AdminInputs = ({ project, onProjectAdded }) => {
       location,
       description,
       paragraphs,
+      images,
     };
 
     try {
@@ -85,10 +108,10 @@ export const AdminInputs = ({ project, onProjectAdded }) => {
 
   return (
     <div>
-      <section className="w-100 d-flex flex-column justify-content-center align-items-center bg-secondary pb-4">
+      <section className="w-100 d-flex flex-column justify-content-center align-items-center bg-secondary py-4">
         {error && <Alert variant="danger">{error}</Alert>}
         {success && <Alert variant="success">{success}</Alert>}
-        <Form className="w-75 bg-light d-flex flex-column align-items-center">
+        <Form className="w-75 py-2 bg-light d-flex flex-column align-items-center">
           <FormGroup className="d-flex flex-row w-100">
             <Form.Group className="p-3 w-50" controlId="formBasicName">
               <Form.Label>Nombre del proyecto</Form.Label>
@@ -120,19 +143,30 @@ export const AdminInputs = ({ project, onProjectAdded }) => {
           </Form.Group>
 
           {paragraphs.map((paragraph, index) => (
-            <Form.Group
-              className="p-3 w-100"
-              controlId={`formBasicParagraph${index}`}
-              key={index}
-            >
-              <Form.Label>Párrafo {index + 1}</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder={`Párrafo ${index + 1}`}
-                value={paragraph}
-                onChange={(e) => handleParagraphChange(index, e.target.value)}
-              />
-            </Form.Group>
+            <div className="p-3 w-100 d-flex" key={index}>
+              <Form.Group
+                className="p-2 w-100"
+                controlId={`formBasicParagraph${index}`}
+              >
+                <Form.Label>Párrafo {index + 1}</Form.Label>
+                <div className="d-flex justify-content-between">
+                  <Form.Control
+                    type="text"
+                    placeholder={`Párrafo ${index + 1}`}
+                    value={paragraph}
+                    onChange={(e) => handleParagraphChange(index, e.target.value)}
+                    className="w-75"
+                  />
+                  <Button
+                    variant="danger"
+                    onClick={() => handleDeleteParagraph(index)}
+                  >
+                    Eliminar Párrafo
+                  </Button>
+
+                </div>
+              </Form.Group>
+            </div>
           ))}
 
           <Button
@@ -142,6 +176,21 @@ export const AdminInputs = ({ project, onProjectAdded }) => {
           >
             + Agregar Párrafo
           </Button>
+
+          {images.map((image, index) => (
+            <Form.Group
+              className="p-3 w-100"
+              controlId={`formBasicImage${index}`}
+              key={index}
+            >
+              <Form.Label>Imagen {index + 1}</Form.Label>
+              <Form.Control
+                type="file"
+                accept="image/*"
+                onChange={(e) => handleImageChange(index, e)}
+              />
+            </Form.Group>
+          ))}
 
           <Button
             variant="info"

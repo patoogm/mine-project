@@ -8,6 +8,8 @@ export const ProjectList = ({item}) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  console.log(item.images)
+
   return (
     <>
       <ul>
@@ -30,6 +32,16 @@ export const ProjectList = ({item}) => {
           {item.paragraphs.map((paragraph) => (
             <p key={item.name}>{paragraph}</p>
           ))}
+          <div className="d-flex justify-content-evenly">
+            {item.images && item.images.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={`Imagen ${index + 1}`}
+                className="img-fluid mb-3 image-modal"
+              />
+            ))}
+          </div>
         </Modal.Body>
       </Modal>
     </>
