@@ -46,7 +46,7 @@ export const ContactForm = () => {
           formDataToSend.append('file', formData.file);
         }
   
-        const response = await axios.post('https://mine-pro-eta.vercel.app/send-email', formDataToSend, {
+        const response = await axios.post('https://mine-project-be.onrender.com/send-email', formDataToSend, {
           headers: {
             'Content-Type': 'multipart/form-data',
           },

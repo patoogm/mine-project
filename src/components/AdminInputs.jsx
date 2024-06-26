@@ -79,7 +79,7 @@ export const AdminInputs = ({ project, onProjectAdded }) => {
 
     try {
       const response = await fetch(
-        `https://mine-pro-eta.vercel.app/${project ? `/edit/${projectId}` : "/add"}`,
+        `https://mine-project-be.onrender.com/${project ? `/edit/${projectId}` : "/add"}`,
         {
           method: project ? "PATCH" : "POST",
           headers: {

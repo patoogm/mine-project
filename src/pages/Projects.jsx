@@ -15,7 +15,7 @@ export const Projects = () => {
 
   const fetchProjects = async () => {
     try {
-      const response = await fetch('https://mine-pro-eta.vercel.app/projects', {
+      const response = await fetch('https://mine-project-be.onrender.com/projects', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
