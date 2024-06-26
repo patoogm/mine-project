@@ -1,6 +1,6 @@
 import { Carousel } from "react-bootstrap";
 import Imagen1 from "../statics/imagen1.jpg";
-import Imagen2 from "../statics/imagen2.jpg";
+import Imagen2 from "../statics/imagen7.jpg";
 import Imagen3 from "../statics/imagen3.jpg";
 
 const CarouselProjects = () => {
