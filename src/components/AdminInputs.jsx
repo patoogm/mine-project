@@ -74,12 +74,12 @@ export const AdminInputs = ({ project, onProjectAdded }) => {
       location,
       description,
       paragraphs,
-      images: images.filter(image => image), // Filtra imágenes vacías
+      images: images.filter((image) => image), // Filtra imágenes vacías
     };
 
     try {
       const response = await fetch(
-        `https://mine-project-be.onrender.com${project ? `/edit/${projectId}` : "/add"}`,
+        `http://localhost:3000${project ? `/edit/${projectId}` : "/add"}`,
         {
           method: project ? "PATCH" : "POST",
           headers: {
@@ -154,7 +154,9 @@ export const AdminInputs = ({ project, onProjectAdded }) => {
                     type="text"
                     placeholder={`Párrafo ${index + 1}`}
                     value={paragraph}
-                    onChange={(e) => handleParagraphChange(index, e.target.value)}
+                    onChange={(e) =>
+                      handleParagraphChange(index, e.target.value)
+                    }
                     className="w-75"
                   />
                   <Button

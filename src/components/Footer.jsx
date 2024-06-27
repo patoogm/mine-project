@@ -2,8 +2,7 @@ import { Col, Row } from "react-bootstrap";
 import "../styles/Footer.css";
 import { useContext } from "react";
 import { LanguageContext } from "../contexts/LanguageContext";
-import logo from '../statics/logo1.png'
-
+import logo from "../statics/logo1.png";
 
 export const Footer = () => {
   const useLanguage = () => useContext(LanguageContext);
@@ -31,16 +30,13 @@ export const Footer = () => {
           <Col className="my-2">
             <p>(+54) 11 5625 8165</p>
           </Col>
-          <Col className="my-2">
-            <p>info@consorciominero.com</p>
-          </Col>
         </Col>
       </Row>
       <Row sm={12}>
         <Col>
           <p>
-            Copyright Consorcio Minero y Energético. 2024 - All Rights Reserved |
-            Desarrollado por JTDIGITALT
+            Copyright Consorcio Minero y Energético. 2024 - All Rights Reserved
+            | Desarrollado por PyM
           </p>
         </Col>
       </Row>

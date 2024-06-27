@@ -79,8 +79,12 @@
 }
 
 .image-modal {
-  margin: 15px;
-  width: 30%;
+  width: 40%;
+}
+
+.img-modal-container {
+  display: flex;
+  justify-content: space-around;
 }
 
 @media all and (min-width: 425px) {
@@ -91,5 +95,27 @@
   .imgProjects {
     height: 100%;
     object-fit: fill;
+  }
+
+  .img-modal-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-modal {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .image-modal {
+    width: 40%;
+  }
+
+  .img-modal-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
   }
 }
