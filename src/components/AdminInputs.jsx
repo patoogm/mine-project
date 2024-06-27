@@ -13,7 +13,7 @@ export const AdminInputs = ({ project, onProjectAdded }) => {
   const [name, setName] = useState("");
   const [location, setLocation] = useState("");
   const [description, setDescription] = useState("");
-  const [paragraphs, setParagraphs] = useState(["", "", "", ""]); // Ajusta el estado inicial con un párrafo adicional
+  const [paragraphs, setParagraphs] = useState(["", "", "", ""]);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
   const [images, setImages] = useState(["", ""]);
@@ -24,14 +24,14 @@ export const AdminInputs = ({ project, onProjectAdded }) => {
       setName(project.name);
       setLocation(project.location);
       setDescription(project.description);
-      setParagraphs(project.paragraphs || ["", "", "", ""]); // Ajusta para manejar hasta 4 párrafos
+      setParagraphs(project.paragraphs || ["", "", "", ""]);
       setImages(project.images || ["", ""]);
     } else {
       setId("");
       setName("");
       setLocation("");
       setDescription("");
-      setParagraphs(["", "", "", ""]); // Ajusta para manejar hasta 4 párrafos
+      setParagraphs(["", "", "", ""]);
       setImages(["", ""]);
     }
   }, [project]);
@@ -74,7 +74,7 @@ export const AdminInputs = ({ project, onProjectAdded }) => {
       location,
       description,
       paragraphs,
-      images,
+      images: images.filter(image => image), // Filtra imágenes vacías
     };
 
     try {
@@ -163,7 +163,6 @@ export const AdminInputs = ({ project, onProjectAdded }) => {
                   >
                     Eliminar Párrafo
                   </Button>
-
                 </div>
               </Form.Group>
             </div>
