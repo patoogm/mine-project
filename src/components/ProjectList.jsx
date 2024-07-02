@@ -8,8 +8,8 @@ export const ProjectList = ({ item }) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const images = item.images || ["", ""]; // Garantiza que siempre haya dos elementos, aunque sean vacíos
-  const validImages = images.filter((image) => image); // Filtra imágenes vacías
+  const images = item.images || ["", ""];
+  const validImages = images.filter((image) => image);
 
   return (
     <>
@@ -31,9 +31,6 @@ export const ProjectList = ({ item }) => {
           <Modal.Title>{item.name}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          {item.paragraphs.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
-          ))}
           <div className="d-flex justify-content-evenly img-modal-container">
             {validImages.map((image, index) => (
               <img
@@ -44,6 +41,9 @@ export const ProjectList = ({ item }) => {
               />
             ))}
           </div>
+          {item.paragraphs.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
         </Modal.Body>
       </Modal>
     </>
