@@ -118,3 +118,19 @@ div .aboutUsContainer {
   font-size: 1.1rem;
   font-weight: 650;
 }
+
+@media (max-width: 992px) {
+  .imgAboutUs {
+    height: 20rem;
+  }
+
+  .imgTextAboutUs > h1 {
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+  }
+
+  .img-modal {
+    height: 300px;
+    margin-bottom: 15px;
+  }
+}

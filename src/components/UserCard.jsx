@@ -25,7 +25,7 @@ export const UserCard = ({ name, role, info, imageSrc }) => {
         </Modal.Header>
         <Modal.Body>
           <Row>
-            <Col sm={12} lg={6} md={6}>
+            <Col sm={12} lg={6} md={6} className="d-flex justify-content-center">
               <img className="img-modal" src={imageSrc} alt="" />
             </Col>
             <Col sm={12} lg={6} md={6}>

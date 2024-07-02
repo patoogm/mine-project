@@ -8,17 +8,17 @@ import { useEffect, useState } from "react";
 
 export const Projects = () => {
   const [projects, setProjects] = useState([]);
-  
+
   useEffect(() => {
     fetchProjects();
   }, []);
 
   const fetchProjects = async () => {
     try {
-      const response = await fetch('https://mine-project-be.onrender.com/projects', {
-        method: 'GET',
+      const response = await fetch("http://localhost:3000/projects", {
+        method: "GET",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
       });
       if (response.ok) {
@@ -29,7 +29,7 @@ export const Projects = () => {
         console.error("Error en la solicitud:", errorMessage);
       }
     } catch (error) {
-      console.error('Error al obtener los proyectos:', error);
+      console.error("Error al obtener los proyectos:", error);
     }
   };
 
@@ -41,13 +41,15 @@ export const Projects = () => {
       </div>
       <Container className="tableContainer">
         <Row>
-          {
-            projects.map((item) => (
-              <Col key={item.id} sm={12} className="d-flex justify-content-center">
-                <ProjectList item={item} />
-              </Col>
-            ))
-          }
+          {projects.map((item) => (
+            <Col
+              key={item.id}
+              sm={12}
+              className="d-flex justify-content-center"
+            >
+              <ProjectList item={item} />
+            </Col>
+          ))}
         </Row>
       </Container>
       <Footer />

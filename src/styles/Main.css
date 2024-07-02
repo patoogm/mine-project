@@ -102,4 +102,37 @@ div .infoBlock {
   .infoBlock > div:nth-child(2) > div {
     margin-right: 0.3rem;
   }
+
+  .img {
+    background-image: url(../statics/mainImg.png);
+    background-repeat: round;
+    height: 10rem;
+    width: 100%;
+    object-fit: fill;
+  }
+}
+
+@media (max-width: 992px) {
+  .img {
+    background-image: url(../statics/mainImg.png);
+    background-repeat: round;
+    height: 20rem;
+    width: 100%;
+    object-fit: fill;
+  }
+
+  .imgText > h1 {
+    line-height: 1;
+    font-size: 2.0rem;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 0.3rem 0.3rem 0.2rem #144272;
+  }
+
+  .imgContactPage {
+    background-repeat: no-repeat;
+    height: 18rem;
+    width: 100%;
+    object-fit: fill;
+  }
 }

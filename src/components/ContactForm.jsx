@@ -38,19 +38,23 @@ export const ContactForm = () => {
       setisLoading(true);
       try {
         const formDataToSend = new FormData();
-        formDataToSend.append('name', formData.name);
-        formDataToSend.append('email', formData.email);
-        formDataToSend.append('phone', formData.phone);
-        formDataToSend.append('comments', formData.comments);
+        formDataToSend.append("name", formData.name);
+        formDataToSend.append("email", formData.email);
+        formDataToSend.append("phone", formData.phone);
+        formDataToSend.append("comments", formData.comments);
         if (formData.file) {
-          formDataToSend.append('file', formData.file);
+          formDataToSend.append("file", formData.file);
         }
-  
-        const response = await axios.post('https://mine-project-be.onrender.com/send-email', formDataToSend, {
-          headers: {
-            'Content-Type': 'multipart/form-data',
-          },
-        });
+
+        const response = await axios.post(
+          "http://localhost:3000/send-email",
+          formDataToSend,
+          {
+            headers: {
+              "Content-Type": "multipart/form-data",
+            },
+          }
+        );
         if (response.status === 200) {
           handleShow(true);
         } else {
