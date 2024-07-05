@@ -15,7 +15,7 @@ export const Projects = () => {
 
   const fetchProjects = async () => {
     try {
-      const response = await fetch("http://localhost:3000/projects", {
+      const response = await fetch("https://mine-project-be-jpsp.onrender.com/projects", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
