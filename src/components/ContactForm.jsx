@@ -47,7 +47,7 @@ export const ContactForm = () => {
         }
 
         const response = await axios.post(
-          "https://mine-project-be-jpsp.onrender.com/send-email",
+          "https://mine-project-be-def.onrender.com/send-email",
           formDataToSend,
           {
             headers: {

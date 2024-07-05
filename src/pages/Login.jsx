@@ -24,7 +24,7 @@ const Login = () => {
         formData.append("user", username);
         formData.append("password", password);
 
-        const response = await fetch("https://mine-project-be-jpsp.onrender.com/authLogin", {
+        const response = await fetch("https://mine-project-be-def.onrender.com/authLogin", {
           method: "POST",
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",

@@ -29,7 +29,7 @@ export const AdminTable = () => {
   const handleDelete = async (projectId) => {
     try {
       const response = await fetch(
-        `https://mine-project-be-jpsp.onrender.com/delete/${projectId}`,
+        `https://mine-project-be-def.onrender.com/delete/${projectId}`,
         {
           method: "DELETE",
           headers: {
@@ -53,7 +53,7 @@ export const AdminTable = () => {
   const handleHide = async (projectId) => {
     try {
       const response = await fetch(
-        `https://mine-project-be-jpsp.onrender.com/projects/hide/${projectId}`,
+        `https://mine-project-be-def.onrender.com/projects/hide/${projectId}`,
         {
           method: "PATCH",
           headers: {
@@ -75,7 +75,7 @@ export const AdminTable = () => {
 
   const fetchProjects = async () => {
     try {
-      const response = await fetch("https://mine-project-be-jpsp.onrender.com/projects", {
+      const response = await fetch("https://mine-project-be-def.onrender.com/projects", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
